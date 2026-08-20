@@ -87,6 +87,29 @@ footer{margin-top:44px;padding-top:14px;border-top:1px solid var(--line);font-si
 .herotop .txt{flex:1;min-width:240px}
 .big{font-size:28px;font-weight:800;letter-spacing:-.01em;line-height:1.4;margin:0 0 6px}
 .big em{font-style:normal;color:var(--ember)}
+.maptabs{display:flex;gap:8px;margin:20px 0 12px;flex-wrap:wrap}
+.maptabs button{font:inherit;font-size:13px;font-weight:700;padding:6px 16px;border-radius:999px;
+border:1px solid var(--strong);background:var(--card);color:var(--soft);cursor:pointer}
+.maptabs button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.jpmap{display:grid;grid-template-columns:repeat(10,1fr);gap:5px;max-width:640px;margin:0 auto}
+.jpmap a{position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;
+aspect-ratio:1/0.82;border-radius:8px;text-decoration:none;color:var(--ink);
+border:1px solid rgba(22,36,31,.10);transition:transform .12s ease,box-shadow .12s ease;overflow:hidden}
+.jpmap a:hover{transform:translateY(-3px) scale(1.06);box-shadow:0 6px 14px rgba(22,36,31,.22);z-index:2;
+border-color:var(--ember)}
+.jpmap .pn{font-size:12px;font-weight:800;line-height:1.1;letter-spacing:-.02em}
+.jpmap .pc{font-size:10px;opacity:.75;font-variant-numeric:tabular-nums;margin-top:1px}
+.jpmap a.h4 .pn,.jpmap a.h4 .pc{color:#fff}
+.jpmap a.h3 .pn,.jpmap a.h3 .pc{color:#3d2313}
+.maplegend{display:flex;align-items:center;gap:4px;justify-content:center;margin:12px 0 4px;
+font-size:11px;color:var(--faint)}
+.maplegend i{width:26px;height:10px;border-radius:2px;display:inline-block}
+@media(max-width:640px){
+ .jpmap{gap:3px}
+ .jpmap .pn{font-size:9px}
+ .jpmap .pc{display:none}
+ .jpmap a{border-radius:5px}
+}
 @media(max-width:640px){
  ul.plain{column-count:1}
  h1{font-size:19px}
