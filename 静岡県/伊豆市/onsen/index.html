@@ -127,6 +127,55 @@ font-size:11px;color:var(--faint)}
  .hero .picto{width:52px;height:52px}
  .cluster{transform:scale(.85);transform-origin:left center}
 }
+
+/* ---- 「数字で見る🔍」セクション（make_pilot_takayama.py の EXTRA_CSS を統合） ---- */
+.numsec{margin-top:26px}
+.numsec h3{display:flex;align-items:center;gap:9px;font-size:16px;margin:30px 0 12px;
+letter-spacing:.01em;font-weight:800}
+.numsec h3::before{content:"";width:9px;height:9px;border-radius:3px;background:var(--cat);flex:none}
+.eyebrow{font-size:13.5px;font-weight:700;color:var(--faint);margin:0 0 2px;letter-spacing:.02em}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+.photos figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;
+overflow:hidden}
+.photos img{width:100%;height:190px;object-fit:cover;display:block}
+.photos figcaption{font-size:11.5px;color:var(--faint);padding:8px 12px;line-height:1.6}
+.photos .cr{opacity:.7}
+.hensrow{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.hens{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);
+border-radius:12px;padding:12px 14px;color:var(--ink);position:relative}
+.hens.on{border:2px solid var(--cat);box-shadow:0 2px 8px rgba(22,36,31,.08)}
+.hens .hp{font-size:11.5px;font-weight:700;color:var(--faint);display:block;margin-bottom:-4px}
+.hens .hv{font-size:34px;font-weight:800;color:var(--cat);font-variant-numeric:tabular-nums;line-height:1.25}
+.hens .hv .hu{font-size:13px;color:var(--soft);font-weight:700;margin-left:1px}
+/* .big はトップページの見出しでも使う名前なので、カード側で明示的に打ち消す */
+.hens.big{background:linear-gradient(135deg,var(--card) 55%,#FBEEDF);font-size:15.5px;
+font-weight:400;letter-spacing:0;line-height:1.85;margin:0}
+.hens.big .hv{font-size:52px;line-height:1.1}
+.hens .hl{display:block;font-size:12.5px;font-weight:700;margin-top:3px}
+.hens .hr{display:block;font-size:10.5px;color:var(--faint);margin-top:1px}
+.catch{font-size:21px;font-weight:800;line-height:1.6;margin:2px 0 14px;letter-spacing:.01em}
+.catch em{font-style:normal;color:var(--cat);font-size:26px}
+.catch .cs{display:block;font-size:13px;font-weight:600;color:var(--faint);margin-top:2px}
+.divchart{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:16px 18px 6px;margin:12px 0;overflow-x:auto}
+.divchart svg{width:100%;min-width:0;height:auto;display:block}
+.analysis{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:6px 20px 14px;margin:12px 0;font-size:14.5px}
+.analysis li{margin:9px 0;line-height:1.9}
+.analysis b{color:var(--cat)}
+.srcnote{font-size:11px;color:var(--faint);line-height:1.8;margin-top:8px}
+@media(max-width:640px){
+ .catch{font-size:17px}
+ .catch em{font-size:21px}
+ .photos{grid-template-columns:1fr}
+ .photos img{height:170px}
+ .hensrow{grid-template-columns:1fr 1fr 1fr;gap:6px}
+ .hens{padding:9px 10px}
+ .hens .hv{font-size:24px}
+ .hens.big .hv{font-size:36px}
+ .hens .hl{font-size:11px}
+ .hens .hr{font-size:9px}
+}
 </style>
 </head>
 <body><div class="wrap">
@@ -140,7 +189,19 @@ font-size:11px;color:var(--faint)}
   </div>
   <img class="picto" src="../../../assets/icons/onsen.png" alt="日帰り入浴">
 </div><p class="lead">最も安いのは<strong>湯ヶ島温泉 瀬古の大湯</strong>（200円）。最も遅くまで入れるのは<strong>碧き凪ぎの宿 明治館</strong>（24:00まで）。朝風呂なら<strong>リブマックスリゾート 天城湯ヶ島 木太刀温泉</strong>（6:00開店）。</p></div>
-<div class="stats"><div class="stat"><div class="v">38<span class="u">件</span></div><div class="l">掲載施設</div></div><div class="stat"><div class="v">865<span class="u">円</span></div><div class="l">入浴料の中央値</div></div><div class="stat"><div class="v">8<span class="u">件</span></div><div class="l">21時以降も営業</div></div><div class="stat"><div class="v">24<span class="u">件</span></div><div class="l">露天風呂あり</div></div><div class="stat"><div class="v">11<span class="u">件</span></div><div class="l">サウナあり</div></div></div>
+
+<div class="numsec">
+<p class="eyebrow">静岡県伊豆市はどんなまち？</p>
+<h2>数字で見る&#128269;静岡県伊豆市</h2>
+<div class="stats"><div class="stat"><div class="v" style="font-size:20px">27,127人</div><div class="l">人口（住民基本台帳・2026年1月1日）</div></div><div class="stat"><div class="v" style="font-size:20px">363.97km²</div><div class="l">面積</div></div></div>
+<h3>寄り道充実度（全国偏差値）</h3>
+<div class="hensrow"><div class="hens on"><span class="hp">全国</span><span class="hv">44<span class="hu">位タイ</span></span><span class="hl">日帰り温泉充実度</span><span class="hr">偏差値74・全国上位2.5%</span></div><a class="hens" href="../michinoeki/"><span class="hp">全国</span><span class="hv">91<span class="hu">位タイ</span></span><span class="hl">道の駅充実度</span><span class="hr">偏差値63・全国上位5.3%</span></a><a class="hens" href="../ice/"><span class="hp">全国</span><span class="hv">106<span class="hu">位タイ</span></span><span class="hl">アイス充実度</span><span class="hr">偏差値59・全国上位6.1%</span></a></div>
+<p class="mininote">偏差値・順位は、ヨッテコ収録データ（2026年8月時点・26,033件）を市区町村別に集計した施設数の全国分布（1,728市区町村）から毎回算出しています。カードを押すとカテゴリ別の分析に切り替わります。</p>
+<h3>日帰り温泉から見た静岡県伊豆市</h3>
+<p class="catch">市内の日帰り温泉は<em>38件</em>、全国<em>44位タイ</em>（上位2.5%）。<span class="cs">——寄り道できる湯の数は、全国でも上位クラス。</span></p><div class="stats"><div class="stat"><div class="v">38<span class="u">件</span></div><div class="l">日帰り入浴施設（全国44位タイ・上位2.5%）</div></div><div class="stat"><div class="v">74<span class="u">偏差値</span></div><div class="l">温泉充実度</div></div><div class="stat"><div class="v">865<span class="u">円</span></div><div class="l">入浴料の中央値（判明22件・全国650円）</div></div></div><div class="divchart"><svg viewBox="0 0 660 266" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="静岡県伊豆市の日帰り温泉 全国水準との比較"><line x1="405" y1="14" x2="405" y2="234" stroke="#C9C1A8" stroke-width="1.4"/><text x="405" y="250" font-size="11" fill="#626C64" text-anchor="middle">全国水準</text><text x="150" y="37" font-size="12.5" font-weight="700" fill="#16241F" text-anchor="end">露天風呂あり</text><rect x="405" y="25" width="88" height="16" rx="4" fill="#C4441F"/><text x="501" y="37" font-size="11.5" font-weight="800" fill="#C4441F" text-anchor="start">+37%</text><text x="150" y="51" font-size="10.5" fill="#626C64" text-anchor="end">63%（全国 46%）</text><text x="150" y="81" font-size="12.5" font-weight="700" fill="#16241F" text-anchor="end">天然温泉</text><rect x="405" y="69" width="110" height="16" rx="4" fill="#C4441F"/><text x="523" y="81" font-size="11.5" font-weight="800" fill="#C4441F" text-anchor="start">+46%</text><text x="150" y="95" font-size="10.5" fill="#626C64" text-anchor="end">97%（全国 67%）</text><text x="150" y="125" font-size="12.5" font-weight="700" fill="#16241F" text-anchor="end">入浴料の価格</text><rect x="405" y="113" width="79" height="16" rx="4" fill="#C4441F"/><text x="492" y="125" font-size="11.5" font-weight="800" fill="#C4441F" text-anchor="start">33%高め</text><text x="150" y="139" font-size="10.5" fill="#626C64" text-anchor="end">865円（全国 650円）</text><text x="150" y="169" font-size="12.5" font-weight="700" fill="#16241F" text-anchor="end">サウナあり</text><rect x="299" y="157" width="105" height="16" rx="4" fill="#1F4D3F"/><text x="291" y="169" font-size="11.5" font-weight="800" fill="#1F4D3F" text-anchor="end">-44%</text><text x="150" y="183" font-size="10.5" fill="#626C64" text-anchor="end">29%（全国 52%）</text><text x="150" y="213" font-size="12.5" font-weight="700" fill="#16241F" text-anchor="end">21時以降も営業</text><rect x="290" y="201" width="114" height="16" rx="4" fill="#1F4D3F"/><text x="282" y="213" font-size="11.5" font-weight="800" fill="#1F4D3F" text-anchor="end">-48%</text><text x="150" y="227" font-size="10.5" fill="#626C64" text-anchor="end">21%（全国 40%）</text></svg></div><div class="analysis"><ul><li><b>露天風呂がある店は63%、全国水準（46%）の1.4倍。</b>湯を外の空気ごと楽しむ形が、このまちの標準になっているようです。</li><li><b>天然温泉を使う店は97%、全国水準（67%）の1.5倍。</b>沸かし湯ではなく源泉が前提で、温泉そのものがまちの資源になっています。</li><li><b>サウナがある店は29%で、全国水準（52%）を下回ります。</b>サウナで整えるより、湯そのものに浸かりに行くまちです。</li><li><b>21時以降も営業する店は21%で、全国水準（40%）を下回ります。</b>明るいうちに入って早く休む、という時間割が見えてきます。</li><li><b>入浴料（判明22件）の中央値は865円。全国（650円）より33%高めです。</b>旅先で入る湯としての価格帯です。</li></ul></div>
+<p class="srcnote">出典: 施設データ=ヨッテコ収録データ（26,033件・2026年8月時点）。偏差値・全国順位・全国水準は全1,728市区町村の分布から毎回算出。 / 人口=総務省「住民基本台帳に基づく人口、人口動態及び世帯数」（2026年1月1日現在） / 面積=国土地理院「全国都道府県市区町村別面積調」（2026年4月1日時点）</p>
+</div>
+
 <h2>曜日別の営業施設数</h2><div class='tablecard mini'><table><thead><tr><th style='text-align:center'>月</th><th style='text-align:center'>火</th><th style='text-align:center'>水</th><th style='text-align:center'>木</th><th style='text-align:center'>金</th><th style='text-align:center'>土</th><th style='text-align:center'>日</th></tr></thead><tbody><tr><td style='text-align:center'>36</td><td style='text-align:center' class='hot'>33</td><td style='text-align:center'>34</td><td style='text-align:center'>34</td><td style='text-align:center'>35</td><td style='text-align:center'>37</td><td style='text-align:center'>37</td></tr></tbody></table></div><p class='mininote'>火曜日が最も休みが多く（各4件が定休）、年中無休は30件です。※営業時間データのある37件で集計</p>
 <h2>入浴料金の分布（大人）</h2><div class='tablecard mini'><table><tbody><tr><td style='white-space:nowrap'>500円以下</td><td style='width:55%'><div style='background:var(--cat);opacity:.75;height:12px;border-radius:3px;width:100%'></div></td><td class='nm' style='white-space:nowrap'>8件</td></tr><tr><td style='white-space:nowrap'>501〜800円</td><td style='width:55%'><div style='background:var(--cat);opacity:.75;height:12px;border-radius:3px;width:25%'></div></td><td class='nm' style='white-space:nowrap'>2件</td></tr><tr><td style='white-space:nowrap'>801〜1,200円</td><td style='width:55%'><div style='background:var(--cat);opacity:.75;height:12px;border-radius:3px;width:62%'></div></td><td class='nm' style='white-space:nowrap'>5件</td></tr><tr><td style='white-space:nowrap'>1,201円以上</td><td style='width:55%'><div style='background:var(--cat);opacity:.75;height:12px;border-radius:3px;width:88%'></div></td><td class='nm' style='white-space:nowrap'>7件</td></tr></tbody></table></div><p class='mininote'>料金が確認できた22件で集計。</p>
 <h2>施設一覧</h2>
@@ -185,7 +246,7 @@ font-size:11px;color:var(--faint)}
 <tr><td><span class='nm'>馬場温泉 楠の湯共同浴場</span><br><span class="tag">天然温泉</span></td><td>13:00〜21:00（火・金休）</td><td style='white-space:nowrap'>400円</td></tr>
 </tbody></table></div>
 <div class="cta"><img src="../../../assets/app_icon.png" alt=""><div><div class="t">現在地から近い順に探すなら、地図アプリ「ヨッテコ」</div><div class="d">全国26,000件の温泉・道の駅・アイスのお店を登録不要で検索。到着時刻に営業しているかの目安も表示します。</div><div class="btnrow"><a class="btn" href="https://apps.apple.com/jp/app/id6790649055">App Storeで無料ダウンロード</a><a class="xbtn" href="https://x.com/yottecojp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg> @yottecojp をフォロー</a></div></div></div>
-<h2>伊豆市の他のカテゴリ</h2><div class="links"><a href="../ice/">伊豆市のアイス（16件）</a><a href="../michinoeki/">伊豆市の道の駅（2件）</a></div>
+<h2>伊豆市の他のカテゴリ</h2><div class="links"><a href="../ice/">伊豆市のアイス（17件）</a><a href="../michinoeki/">伊豆市の道の駅（2件）</a></div>
 <h2>静岡県の他のエリア</h2>
 <div class="links"><a href="../../%E4%BC%8A%E6%9D%B1%E5%B8%82/onsen/">伊東市（48件）</a><a href="../../%E7%86%B1%E6%B5%B7%E5%B8%82/onsen/">熱海市（41件）</a><a href="../../%E9%9D%99%E5%B2%A1%E5%B8%82/onsen/">静岡市（40件）</a><a href="../../%E6%B5%9C%E6%9D%BE%E5%B8%82/onsen/">浜松市（37件）</a><a href="../../%E4%BC%8A%E8%B1%86%E3%81%AE%E5%9B%BD%E5%B8%82/onsen/">伊豆の国市（22件）</a><a href="../../%E4%B8%8B%E7%94%B0%E5%B8%82/onsen/">下田市（20件）</a><a href="../../%E6%B2%BC%E6%B4%A5%E5%B8%82/onsen/">沼津市（15件）</a><a href="../../%E8%B3%80%E8%8C%82%E9%83%A1%E6%9D%B1%E4%BC%8A%E8%B1%86%E7%94%BA/onsen/">賀茂郡東伊豆町（15件）</a><a href="../../%E6%A6%9B%E5%8E%9F%E9%83%A1%E5%B7%9D%E6%A0%B9%E6%9C%AC%E7%94%BA/onsen/">榛原郡川根本町（13件）</a><a href="../../%E8%B3%80%E8%8C%82%E9%83%A1%E6%B2%B3%E6%B4%A5%E7%94%BA/onsen/">賀茂郡河津町（13件）</a><a href="../../%E8%B3%80%E8%8C%82%E9%83%A1%E8%A5%BF%E4%BC%8A%E8%B1%86%E7%94%BA/onsen/">賀茂郡西伊豆町（11件）</a><a href="../../%E7%84%BC%E6%B4%A5%E5%B8%82/onsen/">焼津市（10件）</a><a href="../../%E8%B3%80%E8%8C%82%E9%83%A1%E5%8D%97%E4%BC%8A%E8%B1%86%E7%94%BA/onsen/">賀茂郡南伊豆町（10件）</a><a href="../../%E5%BE%A1%E6%AE%BF%E5%A0%B4%E5%B8%82/onsen/">御殿場市（10件）</a><a href="../../%E5%AF%8C%E5%A3%AB%E5%B8%82/onsen/">富士市（9件）</a><a href="../../%E6%8E%9B%E5%B7%9D%E5%B8%82/onsen/">掛川市（8件）</a><a href="../../%E5%B3%B6%E7%94%B0%E5%B8%82/onsen/">島田市（7件）</a><a href="../../%E5%AF%8C%E5%A3%AB%E5%AE%AE%E5%B8%82/onsen/">富士宮市（7件）</a><a href="../../%E8%B3%80%E8%8C%82%E9%83%A1%E6%9D%BE%E5%B4%8E%E7%94%BA/onsen/">賀茂郡松崎町（6件）</a><a href="../../%E8%A3%BE%E9%87%8E%E5%B8%82/onsen/">裾野市（4件）</a><a href="../../%E4%B8%89%E5%B3%B6%E5%B8%82/onsen/">三島市（4件）</a><a href="../../%E7%A3%90%E7%94%B0%E5%B8%82/onsen/">磐田市（4件）</a><a href="../../%E9%A7%BF%E6%9D%B1%E9%83%A1%E5%B0%8F%E5%B1%B1%E7%94%BA/onsen/">駿東郡小山町（4件）</a><a href="../../%E7%89%A7%E4%B9%8B%E5%8E%9F%E5%B8%82/onsen/">牧之原市（3件）</a><a href="../../%E8%A2%8B%E4%BA%95%E5%B8%82/onsen/">袋井市（3件）</a><a href="../../%E9%A7%BF%E6%9D%B1%E9%83%A1%E9%95%B7%E6%B3%89%E7%94%BA/onsen/">駿東郡長泉町（3件）</a><a href="../../%E7%94%B0%E6%96%B9%E9%83%A1%E5%87%BD%E5%8D%97%E7%94%BA/onsen/">田方郡函南町（3件）</a><a href="../../%E5%91%A8%E6%99%BA%E9%83%A1%E6%A3%AE%E7%94%BA/onsen/">周智郡森町（2件）</a><a href="../../%E6%B9%96%E8%A5%BF%E5%B8%82/onsen/">湖西市（2件）</a></div>
 

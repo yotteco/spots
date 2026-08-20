@@ -127,6 +127,55 @@ font-size:11px;color:var(--faint)}
  .hero .picto{width:52px;height:52px}
  .cluster{transform:scale(.85);transform-origin:left center}
 }
+
+/* ---- 「数字で見る🔍」セクション（make_pilot_takayama.py の EXTRA_CSS を統合） ---- */
+.numsec{margin-top:26px}
+.numsec h3{display:flex;align-items:center;gap:9px;font-size:16px;margin:30px 0 12px;
+letter-spacing:.01em;font-weight:800}
+.numsec h3::before{content:"";width:9px;height:9px;border-radius:3px;background:var(--cat);flex:none}
+.eyebrow{font-size:13.5px;font-weight:700;color:var(--faint);margin:0 0 2px;letter-spacing:.02em}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+.photos figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;
+overflow:hidden}
+.photos img{width:100%;height:190px;object-fit:cover;display:block}
+.photos figcaption{font-size:11.5px;color:var(--faint);padding:8px 12px;line-height:1.6}
+.photos .cr{opacity:.7}
+.hensrow{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.hens{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);
+border-radius:12px;padding:12px 14px;color:var(--ink);position:relative}
+.hens.on{border:2px solid var(--cat);box-shadow:0 2px 8px rgba(22,36,31,.08)}
+.hens .hp{font-size:11.5px;font-weight:700;color:var(--faint);display:block;margin-bottom:-4px}
+.hens .hv{font-size:34px;font-weight:800;color:var(--cat);font-variant-numeric:tabular-nums;line-height:1.25}
+.hens .hv .hu{font-size:13px;color:var(--soft);font-weight:700;margin-left:1px}
+/* .big はトップページの見出しでも使う名前なので、カード側で明示的に打ち消す */
+.hens.big{background:linear-gradient(135deg,var(--card) 55%,#FBEEDF);font-size:15.5px;
+font-weight:400;letter-spacing:0;line-height:1.85;margin:0}
+.hens.big .hv{font-size:52px;line-height:1.1}
+.hens .hl{display:block;font-size:12.5px;font-weight:700;margin-top:3px}
+.hens .hr{display:block;font-size:10.5px;color:var(--faint);margin-top:1px}
+.catch{font-size:21px;font-weight:800;line-height:1.6;margin:2px 0 14px;letter-spacing:.01em}
+.catch em{font-style:normal;color:var(--cat);font-size:26px}
+.catch .cs{display:block;font-size:13px;font-weight:600;color:var(--faint);margin-top:2px}
+.divchart{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:16px 18px 6px;margin:12px 0;overflow-x:auto}
+.divchart svg{width:100%;min-width:0;height:auto;display:block}
+.analysis{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:6px 20px 14px;margin:12px 0;font-size:14.5px}
+.analysis li{margin:9px 0;line-height:1.9}
+.analysis b{color:var(--cat)}
+.srcnote{font-size:11px;color:var(--faint);line-height:1.8;margin-top:8px}
+@media(max-width:640px){
+ .catch{font-size:17px}
+ .catch em{font-size:21px}
+ .photos{grid-template-columns:1fr}
+ .photos img{height:170px}
+ .hensrow{grid-template-columns:1fr 1fr 1fr;gap:6px}
+ .hens{padding:9px 10px}
+ .hens .hv{font-size:24px}
+ .hens.big .hv{font-size:36px}
+ .hens .hl{font-size:11px}
+ .hens .hr{font-size:9px}
+}
 </style>
 </head>
 <body><div class="wrap">

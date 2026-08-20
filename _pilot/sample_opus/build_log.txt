@@ -1,0 +1,10 @@
+市区町村数: 1,837
+kusatsu/ex1_onsen.html onsen: 件数=64 順位=15 偏差値=95.7 上位0.82% 文型=C_top5pct
+kusatsu/ex2_michinoeki.html roadside_station: 件数=1 順位=237タイ 偏差値=53.6 上位12.90% 文型=F_top20
+kusatsu/ex3_ice.html soft_cream: 件数=13 順位=212タイ 偏差値=55.7 上位11.54% 文型=F_top20
+hamamatsu/ex1_onsen.html onsen: 件数=37 順位=47タイ 偏差値=74.3 上位2.56% 文型=C_top5pct
+hamamatsu/ex2_michinoeki.html roadside_station: 件数=3 順位=27タイ 偏差値=74.7 上位1.47% 文型=C_top5pct
+hamamatsu/ex3_ice.html soft_cream: 件数=39 順位=19 偏差値=81.2 上位1.03% 文型=C_top5pct
+iwakuni/ex1_onsen.html onsen: 件数=6 順位=439タイ 偏差値=49.8 上位23.90% 文型=G_fallback
+iwakuni/ex2_michinoeki.html roadside_station: 件数=1 順位=237タイ 偏差値=53.6 上位12.90% 文型=F_top20
+iwakuni/ex3_ice.html soft_cream: 件数=7 順位=641タイ 偏差値=49.8 上位34.89% 文型=G_fallback

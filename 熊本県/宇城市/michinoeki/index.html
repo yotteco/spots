@@ -127,6 +127,55 @@ font-size:11px;color:var(--faint)}
  .hero .picto{width:52px;height:52px}
  .cluster{transform:scale(.85);transform-origin:left center}
 }
+
+/* ---- 「数字で見る🔍」セクション（make_pilot_takayama.py の EXTRA_CSS を統合） ---- */
+.numsec{margin-top:26px}
+.numsec h3{display:flex;align-items:center;gap:9px;font-size:16px;margin:30px 0 12px;
+letter-spacing:.01em;font-weight:800}
+.numsec h3::before{content:"";width:9px;height:9px;border-radius:3px;background:var(--cat);flex:none}
+.eyebrow{font-size:13.5px;font-weight:700;color:var(--faint);margin:0 0 2px;letter-spacing:.02em}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+.photos figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;
+overflow:hidden}
+.photos img{width:100%;height:190px;object-fit:cover;display:block}
+.photos figcaption{font-size:11.5px;color:var(--faint);padding:8px 12px;line-height:1.6}
+.photos .cr{opacity:.7}
+.hensrow{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.hens{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);
+border-radius:12px;padding:12px 14px;color:var(--ink);position:relative}
+.hens.on{border:2px solid var(--cat);box-shadow:0 2px 8px rgba(22,36,31,.08)}
+.hens .hp{font-size:11.5px;font-weight:700;color:var(--faint);display:block;margin-bottom:-4px}
+.hens .hv{font-size:34px;font-weight:800;color:var(--cat);font-variant-numeric:tabular-nums;line-height:1.25}
+.hens .hv .hu{font-size:13px;color:var(--soft);font-weight:700;margin-left:1px}
+/* .big はトップページの見出しでも使う名前なので、カード側で明示的に打ち消す */
+.hens.big{background:linear-gradient(135deg,var(--card) 55%,#FBEEDF);font-size:15.5px;
+font-weight:400;letter-spacing:0;line-height:1.85;margin:0}
+.hens.big .hv{font-size:52px;line-height:1.1}
+.hens .hl{display:block;font-size:12.5px;font-weight:700;margin-top:3px}
+.hens .hr{display:block;font-size:10.5px;color:var(--faint);margin-top:1px}
+.catch{font-size:21px;font-weight:800;line-height:1.6;margin:2px 0 14px;letter-spacing:.01em}
+.catch em{font-style:normal;color:var(--cat);font-size:26px}
+.catch .cs{display:block;font-size:13px;font-weight:600;color:var(--faint);margin-top:2px}
+.divchart{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:16px 18px 6px;margin:12px 0;overflow-x:auto}
+.divchart svg{width:100%;min-width:0;height:auto;display:block}
+.analysis{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:6px 20px 14px;margin:12px 0;font-size:14.5px}
+.analysis li{margin:9px 0;line-height:1.9}
+.analysis b{color:var(--cat)}
+.srcnote{font-size:11px;color:var(--faint);line-height:1.8;margin-top:8px}
+@media(max-width:640px){
+ .catch{font-size:17px}
+ .catch em{font-size:21px}
+ .photos{grid-template-columns:1fr}
+ .photos img{height:170px}
+ .hensrow{grid-template-columns:1fr 1fr 1fr;gap:6px}
+ .hens{padding:9px 10px}
+ .hens .hv{font-size:24px}
+ .hens.big .hv{font-size:36px}
+ .hens .hl{font-size:11px}
+ .hens .hr{font-size:9px}
+}
 </style>
 </head>
 <body><div class="wrap">
@@ -140,7 +189,19 @@ font-size:11px;color:var(--faint)}
   </div>
   <img class="picto" src="../../../assets/icons/roadside_station.png" alt="道の駅">
 </div><p class="lead">最も遅くまで開いているのは<strong>不知火</strong>（21:00まで）。</p></div>
-<div class="stats"><div class="stat"><div class="v">2<span class="u">件</span></div><div class="l">掲載施設</div></div></div>
+
+<div class="numsec">
+<p class="eyebrow">熊本県宇城市はどんなまち？</p>
+<h2>数字で見る&#128269;熊本県宇城市</h2>
+<div class="stats"><div class="stat"><div class="v" style="font-size:20px">55,703人</div><div class="l">人口（住民基本台帳・2026年1月1日）</div></div><div class="stat"><div class="v" style="font-size:20px">188.55km²</div><div class="l">面積</div></div></div>
+<h3>寄り道充実度（全国偏差値）</h3>
+<div class="hensrow"><a class="hens" href="../onsen/"><span class="hp">全国</span><span class="hv">710<span class="hu">位タイ</span></span><span class="hl">日帰り温泉充実度</span><span class="hr">偏差値47・全国上位41.1%</span></a><div class="hens on"><span class="hp">全国</span><span class="hv">91<span class="hu">位タイ</span></span><span class="hl">道の駅充実度</span><span class="hr">偏差値63・全国上位5.3%</span></div><a class="hens" href="../ice/"><span class="hp">全国</span><span class="hv">377<span class="hu">位タイ</span></span><span class="hl">アイス充実度</span><span class="hr">偏差値52・全国上位21.8%</span></a></div>
+<p class="mininote">偏差値・順位は、ヨッテコ収録データ（2026年8月時点・26,033件）を市区町村別に集計した施設数の全国分布（1,728市区町村）から毎回算出しています。カードを押すとカテゴリ別の分析に切り替わります。</p>
+<h3>道の駅から見た熊本県宇城市</h3>
+<p class="catch">道の駅は市内に<em>2駅</em>、全国91位タイ。上位2割に入ります。<span class="cs">——特別な数字ではないが、寄り道先はある。</span></p><div class="stats"><div class="stat"><div class="v">2<span class="u">駅</span></div><div class="l">道の駅（全国91位タイ・上位5.3%）</div></div><div class="stat"><div class="v">63<span class="u">偏差値</span></div><div class="l">道の駅充実度</div></div><div class="stat"><div class="v">0.70<span class="u">駅</span></div><div class="l">1市区町村あたりの全国平均</div></div></div><h3>道の駅が多い市区町村 全国トップ5</h3><div class="tablecard mini"><table><thead><tr><th>順位</th><th>市区町村</th><th>道の駅</th></tr></thead><tbody><tr><td>1位</td><td>岐阜県郡上市</td><td class="hot">8駅</td></tr><tr><td>1位</td><td>岐阜県高山市</td><td class="hot">8駅</td></tr><tr><td>3位</td><td>千葉県南房総市</td><td class="hot">7駅</td></tr><tr><td>3位</td><td>和歌山県田辺市</td><td class="hot">7駅</td></tr><tr><td>3位</td><td>山口県萩市</td><td class="hot">7駅</td></tr><tr style="background:#FBF3E4"><td>91位タイ</td><td>熊本県宇城市</td><td class="hot">2駅</td></tr></tbody></table></div><div class="analysis"><ul><li><b>市内の道の駅: うき・不知火。</b></li><li><b>1市区町村あたりの道の駅は全国平均0.70駅。市内の2駅は、その2.8倍です。</b>市域の広さと幹線の通り方が、そのまま駅の数になって出ています。</li></ul></div>
+<p class="srcnote">出典: 施設データ=ヨッテコ収録データ（26,033件・2026年8月時点）。偏差値・全国順位・全国水準は全1,728市区町村の分布から毎回算出。 / 人口=総務省「住民基本台帳に基づく人口、人口動態及び世帯数」（2026年1月1日現在） / 面積=国土地理院「全国都道府県市区町村別面積調」（2026年4月1日時点）</p>
+</div>
+
 <h2>曜日別の営業施設数</h2><div class='tablecard mini'><table><thead><tr><th style='text-align:center'>月</th><th style='text-align:center'>火</th><th style='text-align:center'>水</th><th style='text-align:center'>木</th><th style='text-align:center'>金</th><th style='text-align:center'>土</th><th style='text-align:center'>日</th></tr></thead><tbody><tr><td style='text-align:center'>2</td><td style='text-align:center'>2</td><td style='text-align:center'>2</td><td style='text-align:center'>2</td><td style='text-align:center'>2</td><td style='text-align:center'>2</td><td style='text-align:center'>2</td></tr></tbody></table></div><p class='mininote'>営業時間データのある2件すべてが週7日営業しています。</p>
 
 <h2>施設一覧</h2>

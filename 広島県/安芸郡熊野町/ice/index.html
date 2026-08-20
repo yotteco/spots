@@ -127,6 +127,55 @@ font-size:11px;color:var(--faint)}
  .hero .picto{width:52px;height:52px}
  .cluster{transform:scale(.85);transform-origin:left center}
 }
+
+/* ---- 「数字で見る🔍」セクション（make_pilot_takayama.py の EXTRA_CSS を統合） ---- */
+.numsec{margin-top:26px}
+.numsec h3{display:flex;align-items:center;gap:9px;font-size:16px;margin:30px 0 12px;
+letter-spacing:.01em;font-weight:800}
+.numsec h3::before{content:"";width:9px;height:9px;border-radius:3px;background:var(--cat);flex:none}
+.eyebrow{font-size:13.5px;font-weight:700;color:var(--faint);margin:0 0 2px;letter-spacing:.02em}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+.photos figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;
+overflow:hidden}
+.photos img{width:100%;height:190px;object-fit:cover;display:block}
+.photos figcaption{font-size:11.5px;color:var(--faint);padding:8px 12px;line-height:1.6}
+.photos .cr{opacity:.7}
+.hensrow{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.hens{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);
+border-radius:12px;padding:12px 14px;color:var(--ink);position:relative}
+.hens.on{border:2px solid var(--cat);box-shadow:0 2px 8px rgba(22,36,31,.08)}
+.hens .hp{font-size:11.5px;font-weight:700;color:var(--faint);display:block;margin-bottom:-4px}
+.hens .hv{font-size:34px;font-weight:800;color:var(--cat);font-variant-numeric:tabular-nums;line-height:1.25}
+.hens .hv .hu{font-size:13px;color:var(--soft);font-weight:700;margin-left:1px}
+/* .big はトップページの見出しでも使う名前なので、カード側で明示的に打ち消す */
+.hens.big{background:linear-gradient(135deg,var(--card) 55%,#FBEEDF);font-size:15.5px;
+font-weight:400;letter-spacing:0;line-height:1.85;margin:0}
+.hens.big .hv{font-size:52px;line-height:1.1}
+.hens .hl{display:block;font-size:12.5px;font-weight:700;margin-top:3px}
+.hens .hr{display:block;font-size:10.5px;color:var(--faint);margin-top:1px}
+.catch{font-size:21px;font-weight:800;line-height:1.6;margin:2px 0 14px;letter-spacing:.01em}
+.catch em{font-style:normal;color:var(--cat);font-size:26px}
+.catch .cs{display:block;font-size:13px;font-weight:600;color:var(--faint);margin-top:2px}
+.divchart{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:16px 18px 6px;margin:12px 0;overflow-x:auto}
+.divchart svg{width:100%;min-width:0;height:auto;display:block}
+.analysis{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:6px 20px 14px;margin:12px 0;font-size:14.5px}
+.analysis li{margin:9px 0;line-height:1.9}
+.analysis b{color:var(--cat)}
+.srcnote{font-size:11px;color:var(--faint);line-height:1.8;margin-top:8px}
+@media(max-width:640px){
+ .catch{font-size:17px}
+ .catch em{font-size:21px}
+ .photos{grid-template-columns:1fr}
+ .photos img{height:170px}
+ .hensrow{grid-template-columns:1fr 1fr 1fr;gap:6px}
+ .hens{padding:9px 10px}
+ .hens .hv{font-size:24px}
+ .hens.big .hv{font-size:36px}
+ .hens .hl{font-size:11px}
+ .hens .hr{font-size:9px}
+}
 </style>
 </head>
 <body><div class="wrap">
@@ -140,7 +189,19 @@ font-size:11px;color:var(--faint)}
   </div>
   <img class="picto" src="../../../assets/icons/soft_cream.png" alt="アイス">
 </div><p class="lead">最も遅くまで開いているのは<strong>カフェ不二 /食事処打鐘</strong>（22:00まで）。</p></div>
-<div class="stats"><div class="stat"><div class="v">6<span class="u">件</span></div><div class="l">掲載施設</div></div><div class="stat"><div class="v">3<span class="u">件</span></div><div class="l">ソフトクリーム</div></div><div class="stat"><div class="v">2<span class="u">件</span></div><div class="l">ジェラート</div></div><div class="stat"><div class="v">1<span class="u">件</span></div><div class="l">かき氷</div></div></div>
+
+<div class="numsec">
+<p class="eyebrow">広島県安芸郡熊野町はどんなまち？</p>
+<h2>数字で見る&#128269;広島県安芸郡熊野町</h2>
+<div class="stats"><div class="stat"><div class="v" style="font-size:20px">23,410人</div><div class="l">人口（住民基本台帳・2026年1月1日）</div></div><div class="stat"><div class="v" style="font-size:20px">33.76km²</div><div class="l">面積</div></div></div>
+<h3>寄り道充実度（全国偏差値）</h3>
+<div class="hensrow"><a class="hens" href="../onsen/"><span class="hp">全国</span><span class="hv">881<span class="hu">位タイ</span></span><span class="hl">日帰り温泉充実度</span><span class="hr">偏差値46・全国上位51.0%</span></a><div class="hens"><span class="hp">全国</span><span class="hv">841<span class="hu">位タイ</span></span><span class="hl">道の駅充実度</span><span class="hr">偏差値43・全国上位48.7%</span></div><div class="hens on"><span class="hp">全国</span><span class="hv">758<span class="hu">位タイ</span></span><span class="hl">アイス充実度</span><span class="hr">偏差値48・全国上位43.9%</span></div></div>
+<p class="mininote">偏差値・順位は、ヨッテコ収録データ（2026年8月時点・26,033件）を市区町村別に集計した施設数の全国分布（1,728市区町村）から毎回算出しています。カードを押すとカテゴリ別の分析に切り替わります。</p>
+<h3>アイスから見た広島県安芸郡熊野町</h3>
+<p class="catch">アイスのお店は町内に<em>6件</em>（全国758位タイ、1市区町村あたりの平均は7.7件）。<span class="cs">——目立たないが、選べる店はある。</span></p><div class="stats"><div class="stat"><div class="v">6<span class="u">件</span></div><div class="l">アイスが食べられるお店（全国758位タイ・上位43.9%）</div></div><div class="stat"><div class="v">48<span class="u">偏差値</span></div><div class="l">アイス充実度</div></div><div class="stat"><div class="v">33<span class="u">%</span></div><div class="l">ジェラートを出す店の割合（全国14%）※判明6件</div></div></div><div class="divchart"><svg viewBox="0 0 660 222" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="広島県安芸郡熊野町のアイス店 全国水準との構成比較"><line x1="405" y1="14" x2="405" y2="190" stroke="#C9C1A8" stroke-width="1.4"/><text x="405" y="206" font-size="11" fill="#626C64" text-anchor="middle">全国水準</text><text x="150" y="37" font-size="12.5" font-weight="700" fill="#16241F" text-anchor="end">かき氷</text><rect x="405" y="25" width="6" height="16" rx="4" fill="#C4441F"/><text x="419" y="37" font-size="11.5" font-weight="800" fill="#C4441F" text-anchor="start">+3%</text><text x="150" y="51" font-size="10.5" fill="#626C64" text-anchor="end">17%（全国 16%）※判明6件</text><text x="150" y="81" font-size="12.5" font-weight="700" fill="#16241F" text-anchor="end">アイスクリーム</text><rect x="405" y="69" width="67" height="16" rx="4" fill="#C4441F"/><text x="480" y="81" font-size="11.5" font-weight="800" fill="#C4441F" text-anchor="start">+28%</text><text x="150" y="95" font-size="10.5" fill="#626C64" text-anchor="end">50%（全国 39%）※判明6件</text><text x="150" y="125" font-size="12.5" font-weight="700" fill="#16241F" text-anchor="end">ソフトクリーム</text><rect x="358" y="113" width="46" height="16" rx="4" fill="#1F4D3F"/><text x="350" y="125" font-size="11.5" font-weight="800" fill="#1F4D3F" text-anchor="end">-19%</text><text x="150" y="139" font-size="10.5" fill="#626C64" text-anchor="end">50%（全国 62%）※判明6件</text><text x="150" y="169" font-size="12.5" font-weight="700" fill="#16241F" text-anchor="end">ジェラート</text><rect x="405" y="157" width="195" height="16" rx="4" fill="#C4441F"/><text x="608" y="169" font-size="11.5" font-weight="800" fill="#C4441F" text-anchor="start">+138%</text><text x="150" y="183" font-size="10.5" fill="#626C64" text-anchor="end">33%（全国 14%）※判明6件</text></svg></div><div class="analysis"><ul><li><b>アイスクリームを出す店は50%、全国水準（39%）の1.3倍。</b>ソフトだけでなく、カップやコーンのアイスまで選べる品ぞろえです。</li><li><b>ソフトクリームを出す店は50%で、全国水準（62%）を下回ります。</b>ソフト一辺倒ではない品ぞろえです。</li><li><b>ジェラートを出す店は33%、全国水準（14%）の2.4倍。</b>アイスのなかでもジェラートに寄った品ぞろえが目立ちます。</li></ul></div>
+<p class="srcnote">出典: 施設データ=ヨッテコ収録データ（26,033件・2026年8月時点）。偏差値・全国順位・全国水準は全1,728市区町村の分布から毎回算出。 / 人口=総務省「住民基本台帳に基づく人口、人口動態及び世帯数」（2026年1月1日現在） / 面積=国土地理院「全国都道府県市区町村別面積調」（2026年4月1日時点）</p>
+</div>
+
 <h2>曜日別の営業施設数</h2><div class='tablecard mini'><table><thead><tr><th style='text-align:center'>月</th><th style='text-align:center'>火</th><th style='text-align:center'>水</th><th style='text-align:center'>木</th><th style='text-align:center'>金</th><th style='text-align:center'>土</th><th style='text-align:center'>日</th></tr></thead><tbody><tr><td style='text-align:center' class='hot'>2</td><td style='text-align:center'>4</td><td style='text-align:center'>4</td><td style='text-align:center'>6</td><td style='text-align:center'>6</td><td style='text-align:center'>6</td><td style='text-align:center'>4</td></tr></tbody></table></div><p class='mininote'>月曜日が最も休みが多く（各4件が定休）、年中無休は0件です。※営業時間データのある6件で集計</p>
 
 <h2>施設一覧</h2>

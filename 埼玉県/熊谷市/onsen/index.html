@@ -127,6 +127,55 @@ font-size:11px;color:var(--faint)}
  .hero .picto{width:52px;height:52px}
  .cluster{transform:scale(.85);transform-origin:left center}
 }
+
+/* ---- 「数字で見る🔍」セクション（make_pilot_takayama.py の EXTRA_CSS を統合） ---- */
+.numsec{margin-top:26px}
+.numsec h3{display:flex;align-items:center;gap:9px;font-size:16px;margin:30px 0 12px;
+letter-spacing:.01em;font-weight:800}
+.numsec h3::before{content:"";width:9px;height:9px;border-radius:3px;background:var(--cat);flex:none}
+.eyebrow{font-size:13.5px;font-weight:700;color:var(--faint);margin:0 0 2px;letter-spacing:.02em}
+.photos{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:14px 0}
+.photos figure{margin:0;background:var(--card);border:1px solid var(--line);border-radius:12px;
+overflow:hidden}
+.photos img{width:100%;height:190px;object-fit:cover;display:block}
+.photos figcaption{font-size:11.5px;color:var(--faint);padding:8px 12px;line-height:1.6}
+.photos .cr{opacity:.7}
+.hensrow{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:14px 0}
+.hens{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);
+border-radius:12px;padding:12px 14px;color:var(--ink);position:relative}
+.hens.on{border:2px solid var(--cat);box-shadow:0 2px 8px rgba(22,36,31,.08)}
+.hens .hp{font-size:11.5px;font-weight:700;color:var(--faint);display:block;margin-bottom:-4px}
+.hens .hv{font-size:34px;font-weight:800;color:var(--cat);font-variant-numeric:tabular-nums;line-height:1.25}
+.hens .hv .hu{font-size:13px;color:var(--soft);font-weight:700;margin-left:1px}
+/* .big はトップページの見出しでも使う名前なので、カード側で明示的に打ち消す */
+.hens.big{background:linear-gradient(135deg,var(--card) 55%,#FBEEDF);font-size:15.5px;
+font-weight:400;letter-spacing:0;line-height:1.85;margin:0}
+.hens.big .hv{font-size:52px;line-height:1.1}
+.hens .hl{display:block;font-size:12.5px;font-weight:700;margin-top:3px}
+.hens .hr{display:block;font-size:10.5px;color:var(--faint);margin-top:1px}
+.catch{font-size:21px;font-weight:800;line-height:1.6;margin:2px 0 14px;letter-spacing:.01em}
+.catch em{font-style:normal;color:var(--cat);font-size:26px}
+.catch .cs{display:block;font-size:13px;font-weight:600;color:var(--faint);margin-top:2px}
+.divchart{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:16px 18px 6px;margin:12px 0;overflow-x:auto}
+.divchart svg{width:100%;min-width:0;height:auto;display:block}
+.analysis{background:var(--card);border:1px solid var(--line);border-radius:12px;
+padding:6px 20px 14px;margin:12px 0;font-size:14.5px}
+.analysis li{margin:9px 0;line-height:1.9}
+.analysis b{color:var(--cat)}
+.srcnote{font-size:11px;color:var(--faint);line-height:1.8;margin-top:8px}
+@media(max-width:640px){
+ .catch{font-size:17px}
+ .catch em{font-size:21px}
+ .photos{grid-template-columns:1fr}
+ .photos img{height:170px}
+ .hensrow{grid-template-columns:1fr 1fr 1fr;gap:6px}
+ .hens{padding:9px 10px}
+ .hens .hv{font-size:24px}
+ .hens.big .hv{font-size:36px}
+ .hens .hl{font-size:11px}
+ .hens .hr{font-size:9px}
+}
 </style>
 </head>
 <body><div class="wrap">
@@ -140,7 +189,19 @@ font-size:11px;color:var(--faint)}
   </div>
   <img class="picto" src="../../../assets/icons/onsen.png" alt="日帰り入浴">
 </div><p class="lead">最も安いのは<strong>桜湯</strong>（550円）。最も遅くまで入れるのは<strong>おふろcafé ハレニワの湯</strong>（翌9:00まで）。朝風呂なら<strong>熊谷温泉 湯楽の里</strong>（9:00開店）。</p></div>
-<div class="stats"><div class="stat"><div class="v">8<span class="u">件</span></div><div class="l">掲載施設</div></div><div class="stat"><div class="v">915<span class="u">円</span></div><div class="l">入浴料の中央値</div></div><div class="stat"><div class="v">6<span class="u">件</span></div><div class="l">21時以降も営業</div></div><div class="stat"><div class="v">4<span class="u">件</span></div><div class="l">露天風呂あり</div></div><div class="stat"><div class="v">7<span class="u">件</span></div><div class="l">サウナあり</div></div></div>
+
+<div class="numsec">
+<p class="eyebrow">埼玉県熊谷市はどんなまち？</p>
+<h2>数字で見る&#128269;埼玉県熊谷市</h2>
+<div class="stats"><div class="stat"><div class="v" style="font-size:20px">189,859人</div><div class="l">人口（住民基本台帳・2026年1月1日）</div></div><div class="stat"><div class="v" style="font-size:20px">159.82km²</div><div class="l">面積</div></div></div>
+<h3>寄り道充実度（全国偏差値）</h3>
+<div class="hensrow"><div class="hens on"><span class="hp">全国</span><span class="hv">342<span class="hu">位タイ</span></span><span class="hl">日帰り温泉充実度</span><span class="hr">偏差値51・全国上位19.8%</span></div><div class="hens"><span class="hp">全国</span><span class="hv">236<span class="hu">位タイ</span></span><span class="hl">道の駅充実度</span><span class="hr">偏差値53・全国上位13.7%</span></div><a class="hens" href="../ice/"><span class="hp">全国</span><span class="hv">84<span class="hu">位タイ</span></span><span class="hl">アイス充実度</span><span class="hr">偏差値60・全国上位4.9%</span></a></div>
+<p class="mininote">偏差値・順位は、ヨッテコ収録データ（2026年8月時点・26,033件）を市区町村別に集計した施設数の全国分布（1,728市区町村）から毎回算出しています。カードを押すとカテゴリ別の分析に切り替わります。</p>
+<h3>日帰り温泉から見た埼玉県熊谷市</h3>
+<p class="catch">日帰り温泉は市内に<em>8件</em>、全国342位タイ。上位2割に入ります。<span class="cs">——特別な数字ではないけれど、ちゃんとある。</span></p><div class="stats"><div class="stat"><div class="v">8<span class="u">件</span></div><div class="l">日帰り入浴施設（全国342位タイ・上位19.8%）</div></div><div class="stat"><div class="v">51<span class="u">偏差値</span></div><div class="l">温泉充実度</div></div><div class="stat"><div class="v">915<span class="u">円</span></div><div class="l">入浴料の中央値（判明8件・全国650円）</div></div></div><div class="divchart"><svg viewBox="0 0 660 266" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="埼玉県熊谷市の日帰り温泉 全国水準との比較"><line x1="405" y1="14" x2="405" y2="234" stroke="#C9C1A8" stroke-width="1.4"/><text x="405" y="250" font-size="11" fill="#626C64" text-anchor="middle">全国水準</text><text x="150" y="37" font-size="12.5" font-weight="700" fill="#16241F" text-anchor="end">露天風呂あり</text><rect x="405" y="25" width="20" height="16" rx="4" fill="#C4441F"/><text x="433" y="37" font-size="11.5" font-weight="800" fill="#C4441F" text-anchor="start">+8%</text><text x="150" y="51" font-size="10.5" fill="#626C64" text-anchor="end">50%（全国 46%）※判明8件</text><text x="150" y="81" font-size="12.5" font-weight="700" fill="#16241F" text-anchor="end">天然温泉</text><rect x="299" y="69" width="105" height="16" rx="4" fill="#1F4D3F"/><text x="291" y="81" font-size="11.5" font-weight="800" fill="#1F4D3F" text-anchor="end">-44%</text><text x="150" y="95" font-size="10.5" fill="#626C64" text-anchor="end">38%（全国 67%）※判明8件</text><text x="150" y="125" font-size="12.5" font-weight="700" fill="#16241F" text-anchor="end">入浴料の価格</text><rect x="405" y="113" width="97" height="16" rx="4" fill="#C4441F"/><text x="510" y="125" font-size="11.5" font-weight="800" fill="#C4441F" text-anchor="start">41%高め</text><text x="150" y="139" font-size="10.5" fill="#626C64" text-anchor="end">915円（全国 650円）※判明8件</text><text x="150" y="169" font-size="12.5" font-weight="700" fill="#16241F" text-anchor="end">サウナあり</text><rect x="405" y="157" width="165" height="16" rx="4" fill="#C4441F"/><text x="578" y="169" font-size="11.5" font-weight="800" fill="#C4441F" text-anchor="start">+69%</text><text x="150" y="183" font-size="10.5" fill="#626C64" text-anchor="end">88%（全国 52%）※判明8件</text><text x="150" y="213" font-size="12.5" font-weight="700" fill="#16241F" text-anchor="end">21時以降も営業</text><rect x="405" y="201" width="195" height="16" rx="4" fill="#C4441F"/><text x="608" y="213" font-size="11.5" font-weight="800" fill="#C4441F" text-anchor="start">+87%</text><text x="150" y="227" font-size="10.5" fill="#626C64" text-anchor="end">75%（全国 40%）※判明8件</text></svg></div><div class="analysis"><ul><li><b>天然温泉を使う店は38%で、全国水準（67%）を下回ります。</b>温泉地というより、暮らしの延長にある入浴施設が数を支えています。</li><li><b>サウナがある店は88%、全国水準（52%）の1.7倍。</b>日常づかいのスーパー銭湯型が数を押し上げる構成です。</li><li><b>21時以降も営業する店は75%、全国水準（40%）の1.9倍。</b>一日の終わりに一風呂、という選択肢が残っています。</li><li><b>入浴料（判明8件）の中央値は915円。全国（650円）より41%高めです。</b>旅先で入る湯としての価格帯です。</li></ul></div>
+<p class="srcnote">出典: 施設データ=ヨッテコ収録データ（26,033件・2026年8月時点）。偏差値・全国順位・全国水準は全1,728市区町村の分布から毎回算出。 / 人口=総務省「住民基本台帳に基づく人口、人口動態及び世帯数」（2026年1月1日現在） / 面積=国土地理院「全国都道府県市区町村別面積調」（2026年4月1日時点）</p>
+</div>
+
 <h2>曜日別の営業施設数</h2><div class='tablecard mini'><table><thead><tr><th style='text-align:center'>月</th><th style='text-align:center'>火</th><th style='text-align:center'>水</th><th style='text-align:center'>木</th><th style='text-align:center'>金</th><th style='text-align:center'>土</th><th style='text-align:center'>日</th></tr></thead><tbody><tr><td style='text-align:center' class='hot'>7</td><td style='text-align:center'>8</td><td style='text-align:center'>8</td><td style='text-align:center'>8</td><td style='text-align:center'>8</td><td style='text-align:center'>8</td><td style='text-align:center'>8</td></tr></tbody></table></div><p class='mininote'>月曜日が最も休みが多く（各1件が定休）、年中無休は7件です。※営業時間データのある8件で集計</p>
 <h2>入浴料金の分布（大人）</h2><div class='tablecard mini'><table><tbody><tr><td style='white-space:nowrap'>501〜800円</td><td style='width:55%'><div style='background:var(--cat);opacity:.75;height:12px;border-radius:3px;width:50%'></div></td><td class='nm' style='white-space:nowrap'>2件</td></tr><tr><td style='white-space:nowrap'>801〜1,200円</td><td style='width:55%'><div style='background:var(--cat);opacity:.75;height:12px;border-radius:3px;width:100%'></div></td><td class='nm' style='white-space:nowrap'>4件</td></tr><tr><td style='white-space:nowrap'>1,201円以上</td><td style='width:55%'><div style='background:var(--cat);opacity:.75;height:12px;border-radius:3px;width:50%'></div></td><td class='nm' style='white-space:nowrap'>2件</td></tr></tbody></table></div><p class='mininote'>料金が確認できた8件で集計。</p>
 <h2>施設一覧</h2>
