@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://yotteco.github.io/spots/sitemap.xml
