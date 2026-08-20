@@ -91,25 +91,22 @@ footer{margin-top:44px;padding-top:14px;border-top:1px solid var(--line);font-si
 .maptabs button{font:inherit;font-size:13px;font-weight:700;padding:6px 16px;border-radius:999px;
 border:1px solid var(--strong);background:var(--card);color:var(--soft);cursor:pointer}
 .maptabs button.on{background:var(--ink);color:var(--paper);border-color:var(--ink)}
-.jpmap{display:grid;grid-template-columns:repeat(10,1fr);gap:5px;max-width:640px;margin:0 auto}
-.jpmap a{position:relative;display:flex;flex-direction:column;justify-content:center;align-items:center;
-aspect-ratio:1/0.82;border-radius:8px;text-decoration:none;color:var(--ink);
-border:1px solid rgba(22,36,31,.10);transition:transform .12s ease,box-shadow .12s ease;overflow:hidden}
-.jpmap a:hover{transform:translateY(-3px) scale(1.06);box-shadow:0 6px 14px rgba(22,36,31,.22);z-index:2;
-border-color:var(--ember)}
-.jpmap .pn{font-size:12px;font-weight:800;line-height:1.1;letter-spacing:-.02em}
-.jpmap .pc{font-size:10px;opacity:.75;font-variant-numeric:tabular-nums;margin-top:1px}
-.jpmap a.h4 .pn,.jpmap a.h4 .pc{color:#fff}
-.jpmap a.h3 .pn,.jpmap a.h3 .pc{color:#3d2313}
+.mapwrap{position:relative;max-width:740px;margin:0 auto}
+.jpsvg{width:100%;height:auto;display:block}
+.jpsvg a{outline:none}
+.jpsvg path.pf{stroke:var(--paper);stroke-width:1;cursor:pointer;
+transition:fill .35s ease,transform .15s ease,filter .15s ease;transform-box:fill-box}
+.jpsvg a:hover path.pf,.jpsvg a:focus-visible path.pf{stroke:#fff;stroke-width:1.6;
+transform:translateY(-3px);filter:drop-shadow(0 5px 6px rgba(22,36,31,.35))}
+.jpsvg .divider{fill:none;stroke:var(--strong);stroke-width:1.2;stroke-dasharray:5 4}
+.maptip{position:absolute;left:0;top:0;pointer-events:none;background:var(--ink);color:var(--paper);
+font-size:12.5px;font-weight:700;line-height:1.5;padding:5px 12px;border-radius:7px;
+white-space:nowrap;opacity:0;transition:opacity .12s;z-index:5;transform:translate(-50%,-135%)}
+.maptip .tc{color:#F0DDBB;font-weight:600;font-size:11.5px;margin-left:7px}
 .maplegend{display:flex;align-items:center;gap:4px;justify-content:center;margin:12px 0 4px;
 font-size:11px;color:var(--faint)}
 .maplegend i{width:26px;height:10px;border-radius:2px;display:inline-block}
-@media(max-width:640px){
- .jpmap{gap:3px}
- .jpmap .pn{font-size:9px}
- .jpmap .pc{display:none}
- .jpmap a{border-radius:5px}
-}
+.mapnote{font-size:10.5px;color:var(--faint);text-align:center;margin:2px 0 0}
 @media(max-width:640px){
  ul.plain{column-count:1}
  h1{font-size:19px}
