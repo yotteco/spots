@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>宮城県の日帰り温泉・道の駅・アイスのお店一覧【2026年8月版】｜ヨッテコ</title>
-<meta name="description" content="宮城県の日帰り温泉・銭湯、道の駅、ソフトクリーム店 計464件を市区町村別に掲載（2026年8月時点）。">
+<title>宮城県の日帰り温泉・道の駅・アイスのお店一覧【2026年9月版】｜ヨッテコ</title>
+<meta name="description" content="宮城県の日帰り温泉・銭湯、道の駅、ソフトクリーム店 計464件を市区町村別に掲載（2026年9月時点）。">
 <link rel="canonical" href="https://spots.yotteco.jp/%E5%AE%AE%E5%9F%8E%E7%9C%8C/">
 <link rel="icon" type="image/png" href="https://spots.yotteco.jp/assets/app_icon.png">
 <link rel="apple-touch-icon" href="https://spots.yotteco.jp/assets/app_icon.png">
 <meta property="og:site_name" content="ヨッテコ">
 <meta property="og:type" content="website">
-<meta property="og:title" content="宮城県の日帰り温泉・道の駅・アイスのお店一覧【2026年8月版】｜ヨッテコ">
-<meta property="og:description" content="宮城県の日帰り温泉・銭湯、道の駅、ソフトクリーム店 計464件を市区町村別に掲載（2026年8月時点）。">
+<meta property="og:title" content="宮城県の日帰り温泉・道の駅・アイスのお店一覧【2026年9月版】｜ヨッテコ">
+<meta property="og:description" content="宮城県の日帰り温泉・銭湯、道の駅、ソフトクリーム店 計464件を市区町村別に掲載（2026年9月時点）。">
 <meta property="og:url" content="https://spots.yotteco.jp/%E5%AE%AE%E5%9F%8E%E7%9C%8C/">
 <meta property="og:image" content="https://spots.yotteco.jp/og.png">
 <meta property="og:image:width" content="1200">
@@ -178,13 +178,127 @@ padding:6px 20px 14px;margin:12px 0;font-size:14.5px}
  .hens .hl{font-size:11px}
  .hens .hr{font-size:9px}
 }
+
+/* ---- 見出しの件数注記 ---- */
+h2 .cnt{font-size:12.5px;color:var(--faint);font-weight:600;margin-left:2px}
+/* ---- 施設一覧（5件）と表内のアプリ導線 ---- */
+.showcase td.hrs,.showcase td.prc{white-space:nowrap;font-variant-numeric:tabular-nums}
+.showcase .tag.roten{border-color:#C8A6A0;color:#8A3A2A;background:#FBF0EC}
+.showcase .tag.sauna{border-color:#A7BDB3;color:var(--pine);background:#EDF4EF}
+.more{display:flex;align-items:center;gap:14px;padding:14px 16px;background:var(--paper2);border-top:1px solid var(--line)}
+.more .ic{flex:none;width:40px;height:40px;border-radius:10px;background:#fff;display:grid;place-items:center}
+.more .ic svg{width:24px;height:24px;display:block}
+.more .t{flex:1;min-width:200px}
+.more .t b{display:block;font-size:14.5px;line-height:1.55}
+.more .t span{display:block;font-size:12.5px;color:var(--faint);margin-top:1px}
+.more .btn{flex:none;text-decoration:none;font-weight:800;font-size:13.5px;padding:9px 16px;border-radius:9px;background:var(--pine);color:var(--paper);white-space:nowrap;margin:0}
+/* ---- 定休・料金の2枚 ---- */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+.two.one{grid-template-columns:1fr;max-width:560px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px 12px;font-size:14px}
+.box h4{margin:0 0 6px;font-size:13.5px}
+.box p{margin:0;line-height:1.85}
+.bars{display:grid;grid-template-columns:auto 1fr auto;gap:4px 10px;align-items:center;font-size:13px;font-variant-numeric:tabular-nums}
+.bars .b{height:12px;border-radius:3px;background:var(--cat);opacity:.8}
+.bars .k{color:var(--soft);white-space:nowrap}
+.bars .n{font-weight:700;text-align:right}
+/* ---- 数字で見る ---- */
+.numsec{margin-top:36px;padding-top:6px;border-top:1px solid var(--line)}
+.numsec .eyebrow{margin-top:18px}
+.h3note{font-size:12.5px;color:var(--faint);margin:-4px 0 12px}
+.prose{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 20px;margin:12px 0;font-size:14.5px;line-height:1.95}
+.prose p{margin:0}
+.prose p+p{margin-top:8px}
+.photos figcaption{color:var(--soft);font-size:12px}
+.photos .cr{color:var(--faint);font-size:11px;opacity:1}
+/* 全国での位置カード（旧 .hens の置き換え） */
+.rankrow{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:6px 0 4px}
+.rank{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);
+border-radius:12px;padding:12px 14px 12px;color:var(--ink);position:relative;--c:var(--cat)}
+.rank.on{border:2px solid var(--c);box-shadow:0 2px 8px rgba(22,36,31,.08)}
+.rank .cat{font-size:12.5px;font-weight:700;color:var(--soft);display:flex;justify-content:space-between;gap:6px}
+.rank .cat i{font-style:normal;color:var(--faint);font-weight:600}
+.rank .num{margin-top:2px;font-variant-numeric:tabular-nums;line-height:1.15;display:flex;align-items:baseline;gap:4px;flex-wrap:wrap}
+.rank .num b{font-size:34px;font-weight:800;color:var(--c)}
+.rank .num b small{font-size:14px;font-weight:700;color:var(--soft);margin-left:1px}
+.rank .num span{font-size:12.5px;color:var(--faint);font-weight:600}
+.rank .tier{display:block;font-size:12.5px;font-weight:800;color:var(--c);margin-top:2px}
+.strip{display:block;position:relative;height:8px;border-radius:4px;margin:12px 0 4px;
+background:linear-gradient(90deg,var(--c) 0%,var(--strong) 45%,var(--paper2) 100%)}
+.strip i{position:absolute;top:50%;width:14px;height:14px;border-radius:50%;background:#fff;
+border:3px solid var(--c);transform:translate(-50%,-50%);box-shadow:0 1px 3px rgba(22,36,31,.3)}
+.scale{display:flex;justify-content:space-between;font-size:10.5px;color:var(--faint);font-variant-numeric:tabular-nums}
+/* 全国平均との比較（レーダー＋表） */
+.cmp{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px 12px;margin:12px 0}
+.legend{display:flex;gap:16px;font-size:12.5px;font-weight:700;color:var(--soft);flex-wrap:wrap;align-items:center}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend .sw{width:22px;height:0;border-top:3px solid var(--cat);border-radius:2px}
+.legend .sw.nat{border-top:3px dashed #7A8078}
+.legend .note{font-weight:600;color:var(--faint);margin-left:auto}
+.cmpbody{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:14px 22px;align-items:center;margin-top:6px}
+.cmpbody svg{width:100%;height:auto;display:block;max-width:460px;margin:0 auto}
+.cmpbody svg text{font-family:inherit}
+.cmpbody svg.radar-sp{display:none}
+.vt{width:100%;border-collapse:collapse;font-size:13.5px;font-variant-numeric:tabular-nums}
+.vt th{font-size:11px;color:var(--faint);font-weight:700;text-align:right;padding:2px 6px;border-bottom:1px solid var(--line);white-space:nowrap;background:none}
+.vt th:first-child{text-align:left}
+.vt td{padding:6px 6px;text-align:right;border-bottom:1px solid var(--line)}
+.vt td:first-child{text-align:left;font-weight:700}
+.vt tr:last-child td{border-bottom:0}
+.vt .m{color:var(--cat);font-weight:800}
+.vt .n{color:#7A8078}
+.vt .d{font-size:12px;font-weight:700}
+.vt .d.up{color:var(--cat)}.vt .d.dn{color:var(--pine)}.vt .d.ev{color:var(--faint)}
+.pricecmp{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);font-size:13.5px}
+.pricecmp .lab{font-weight:700;min-width:120px}
+.pricecmp svg{flex:1;min-width:200px;height:auto}
+.pricecmp .note{font-size:12px;color:var(--faint)}
+.summary{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 20px;margin:12px 0;font-size:14.5px;line-height:1.95}
+.summary p{margin:0}
+.summary p+p{margin-top:8px}
+.src{font-size:11.5px;color:var(--faint);line-height:1.8;margin-top:8px}
+.src summary{cursor:pointer;font-weight:700}
+/* スマホだけ: 一覧を読み終えて下へ進んだら、画面下に固定のアプリ導線を出す */
+.stickybar{display:none}
+@media(max-width:640px){
+ h2{flex-wrap:wrap}h2 .cnt{width:100%;margin:-2px 0 0 19px}
+ .more{flex-wrap:wrap}.more .btn{width:100%;text-align:center}
+ .showcase{overflow-x:visible}
+ .showcase table,.showcase thead,.showcase tbody,.showcase tr,.showcase td{display:block}
+ .showcase thead{display:none}
+ .showcase tr{padding:10px 14px;border-bottom:1px solid var(--line)}
+ .showcase tbody tr:last-child{border-bottom:none}
+ .showcase td{padding:0;border:0}
+ .showcase td.hrs,.showcase td.prc{display:inline;white-space:normal;font-size:13px;color:var(--soft)}
+ .showcase td.hrs::before{content:"営業 ";color:var(--faint);font-size:11.5px}
+ .showcase td.prc::before{content:"\3000 料金 ";color:var(--faint);font-size:11.5px}
+ .two{grid-template-columns:1fr}
+ .stats{grid-template-columns:1fr 1fr}
+ .rankrow{grid-template-columns:1fr;gap:8px}
+ .rank .num b{font-size:30px}
+ .cmpbody{grid-template-columns:1fr}
+ .cmpbody svg.radar-pc{display:none}.cmpbody svg.radar-sp{display:block}
+ .pricecmp .lab{min-width:0;width:100%}
+ .stickybar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;align-items:center;gap:10px;
+  padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:var(--pine);color:var(--paper);
+  box-shadow:0 -4px 16px rgba(22,36,31,.18);transform:translateY(110%);transition:transform .25s ease}
+ .stickybar.show{transform:none}
+ .stickybar .t{flex:1;min-width:0;font-size:12.5px;line-height:1.45}
+ .stickybar .t b{display:block;font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ .stickybar .btn{flex:none;text-decoration:none;font-weight:800;font-size:13px;padding:9px 14px;border-radius:9px;background:var(--paper);color:var(--pine);white-space:nowrap;margin:0}
+ .stickybar .x{flex:none;width:30px;height:30px;border:0;background:transparent;color:var(--paper);font-size:20px;line-height:1;cursor:pointer;opacity:.75;padding:0}
+ body.hasbar .wrap{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+ @media(prefers-reduced-motion:reduce){.stickybar{transition:none}}
+}
 </style>
 </head>
 <body><div class="wrap">
 <div class="topbar"><a href="../"><img src="../assets/app_icon.png" alt="ヨッテコ"><span class="wm">ヨッテコ</span><span class="tg">旅先で、さがせる。</span></a></div>
 <div class="crumb"><a href="../">全国</a> › 宮城県</div>
-<div class="hero"><h1 style="padding-right:0">宮城県の寄り道スポット（464件）</h1><p class="sub">市区町村を選ぶと、営業時間・料金つきの一覧と「最も安い／最も遅くまで開いている」施設が分かります。</p></div><h2 style="--cat:#A23F22"><img src="../assets/icons/onsen.png" alt="">日帰り温泉・銭湯・サウナ（198件）</h2><ul class="plain"><li><a href="%E4%BA%98%E7%90%86%E9%83%A1%E4%BA%98%E7%90%86%E7%94%BA/onsen/">亘理郡亘理町（2件）</a></li><li><a href="%E4%BB%99%E5%8F%B0%E5%B8%82/onsen/">仙台市（44件）</a></li><li><a href="%E4%BC%8A%E5%85%B7%E9%83%A1%E4%B8%B8%E6%A3%AE%E7%94%BA/onsen/">伊具郡丸森町（3件）</a></li><li style="color:var(--faint)">刈田郡七ヶ宿町: wood&amp;Spa や・すまっしぇ</li><li><a href="%E5%88%88%E7%94%B0%E9%83%A1%E8%94%B5%E7%8E%8B%E7%94%BA/onsen/">刈田郡蔵王町（15件）</a></li><li><a href="%E5%8A%A0%E7%BE%8E%E9%83%A1%E5%8A%A0%E7%BE%8E%E7%94%BA/onsen/">加美郡加美町（3件）</a></li><li style="color:var(--faint)">加美郡色麻町: 色麻平沢温泉 かっぱのゆ</li><li><a href="%E5%90%8D%E5%8F%96%E5%B8%82/onsen/">名取市（2件）</a></li><li><a href="%E5%A4%9A%E8%B3%80%E5%9F%8E%E5%B8%82/onsen/">多賀城市（3件）</a></li><li><a href="%E5%A4%A7%E5%B4%8E%E5%B8%82/onsen/">大崎市（56件）</a></li><li><a href="%E5%AE%AE%E5%9F%8E%E9%83%A1%E5%88%A9%E5%BA%9C%E7%94%BA/onsen/">宮城郡利府町（3件）</a></li><li><a href="%E5%AE%AE%E5%9F%8E%E9%83%A1%E6%9D%BE%E5%B3%B6%E7%94%BA/onsen/">宮城郡松島町（7件）</a></li><li><a href="%E5%AF%8C%E8%B0%B7%E5%B8%82/onsen/">富谷市（2件）</a></li><li><a href="%E5%B2%A9%E6%B2%BC%E5%B8%82/onsen/">岩沼市（3件）</a></li><li><a href="%E6%9C%AC%E5%90%89%E9%83%A1%E5%8D%97%E4%B8%89%E9%99%B8%E7%94%BA/onsen/">本吉郡南三陸町（4件）</a></li><li><a href="%E6%9D%B1%E6%9D%BE%E5%B3%B6%E5%B8%82/onsen/">東松島市（3件）</a></li><li style="color:var(--faint)">柴田郡大河原町: おおがわら天然温泉 いい湯</li><li><a href="%E6%9F%B4%E7%94%B0%E9%83%A1%E5%B7%9D%E5%B4%8E%E7%94%BA/onsen/">柴田郡川崎町（7件）</a></li><li><a href="%E6%A0%97%E5%8E%9F%E5%B8%82/onsen/">栗原市（9件）</a></li><li><a href="%E6%B0%97%E4%BB%99%E6%B2%BC%E5%B8%82/onsen/">気仙沼市（6件）</a></li><li><a href="%E7%89%A1%E9%B9%BF%E9%83%A1%E5%A5%B3%E5%B7%9D%E7%94%BA/onsen/">牡鹿郡女川町（3件）</a></li><li><a href="%E7%99%BD%E7%9F%B3%E5%B8%82/onsen/">白石市（8件）</a></li><li><a href="%E7%9F%B3%E5%B7%BB%E5%B8%82/onsen/">石巻市（5件）</a></li><li style="color:var(--faint)">角田市: 天然温泉 もみの木</li><li style="color:var(--faint)">遠田郡涌谷町: わくや天平の湯</li><li><a href="%E9%BB%92%E5%B7%9D%E9%83%A1%E5%A4%A7%E5%92%8C%E7%94%BA/onsen/">黒川郡大和町（4件）</a></li><li style="color:var(--faint)">黒川郡大郷町: リンクスのさうな</li></ul><h2 style="--cat:#15512B"><img src="../assets/icons/roadside_station.png" alt="">道の駅（19件）</h2><ul class="plain"><li style="color:var(--faint)">刈田郡七ヶ宿町: 七ヶ宿</li><li><a href="%E5%A4%A7%E5%B4%8E%E5%B8%82/michinoeki/">大崎市（3件）</a></li><li style="color:var(--faint)">本吉郡南三陸町: さんさん南三陸</li><li style="color:var(--faint)">東松島市: 東松島</li><li style="color:var(--faint)">柴田郡村田町: 村田</li><li style="color:var(--faint)">栗原市: 路田里はなやま</li><li style="color:var(--faint)">気仙沼市: 大谷海岸</li><li style="color:var(--faint)">牡鹿郡女川町: おながわ</li><li><a href="%E7%99%BB%E7%B1%B3%E5%B8%82/michinoeki/">登米市（5件）</a></li><li><a href="%E7%9F%B3%E5%B7%BB%E5%B8%82/michinoeki/">石巻市（2件）</a></li><li style="color:var(--faint)">角田市: かくだ</li><li style="color:var(--faint)">黒川郡大郷町: おおさと</li></ul><h2 style="--cat:#8A6400"><img src="../assets/icons/soft_cream.png" alt="">ソフトクリーム・ジェラート・かき氷（247件）</h2><ul class="plain"><li><a href="%E4%BA%98%E7%90%86%E9%83%A1%E4%BA%98%E7%90%86%E7%94%BA/ice/">亘理郡亘理町（4件）</a></li><li><a href="%E4%BA%98%E7%90%86%E9%83%A1%E5%B1%B1%E5%85%83%E7%94%BA/ice/">亘理郡山元町（4件）</a></li><li><a href="%E4%BB%99%E5%8F%B0%E5%B8%82/ice/">仙台市（52件）</a></li><li style="color:var(--faint)">伊具郡丸森町: 蔵の郷土館 齋理屋敷 店蔵</li><li><a href="%E5%88%88%E7%94%B0%E9%83%A1%E4%B8%83%E3%83%B6%E5%AE%BF%E7%94%BA/ice/">刈田郡七ヶ宿町（2件）</a></li><li><a href="%E5%88%88%E7%94%B0%E9%83%A1%E8%94%B5%E7%8E%8B%E7%94%BA/ice/">刈田郡蔵王町（7件）</a></li><li><a href="%E5%8A%A0%E7%BE%8E%E9%83%A1%E5%8A%A0%E7%BE%8E%E7%94%BA/ice/">加美郡加美町（5件）</a></li><li style="color:var(--faint)">加美郡色麻町: 色麻平沢温泉 かっぱのゆ（売店）</li><li><a href="%E5%90%8D%E5%8F%96%E5%B8%82/ice/">名取市（13件）</a></li><li><a href="%E5%A1%A9%E7%AB%88%E5%B8%82/ice/">塩竈市（4件）</a></li><li><a href="%E5%A4%9A%E8%B3%80%E5%9F%8E%E5%B8%82/ice/">多賀城市（5件）</a></li><li><a href="%E5%A4%A7%E5%B4%8E%E5%B8%82/ice/">大崎市（12件）</a></li><li style="color:var(--faint)">宮城郡七ヶ浜町: ソフトクリーム Nana</li><li><a href="%E5%AE%AE%E5%9F%8E%E9%83%A1%E5%88%A9%E5%BA%9C%E7%94%BA/ice/">宮城郡利府町（4件）</a></li><li><a href="%E5%AE%AE%E5%9F%8E%E9%83%A1%E6%9D%BE%E5%B3%B6%E7%94%BA/ice/">宮城郡松島町（11件）</a></li><li><a href="%E5%AF%8C%E8%B0%B7%E5%B8%82/ice/">富谷市（7件）</a></li><li><a href="%E5%B2%A9%E6%B2%BC%E5%B8%82/ice/">岩沼市（8件）</a></li><li><a href="%E6%9C%AC%E5%90%89%E9%83%A1%E5%8D%97%E4%B8%89%E9%99%B8%E7%94%BA/ice/">本吉郡南三陸町（8件）</a></li><li><a href="%E6%9D%B1%E6%9D%BE%E5%B3%B6%E5%B8%82/ice/">東松島市（8件）</a></li><li><a href="%E6%9F%B4%E7%94%B0%E9%83%A1%E5%A4%A7%E6%B2%B3%E5%8E%9F%E7%94%BA/ice/">柴田郡大河原町（6件）</a></li><li><a href="%E6%9F%B4%E7%94%B0%E9%83%A1%E5%B7%9D%E5%B4%8E%E7%94%BA/ice/">柴田郡川崎町（7件）</a></li><li><a href="%E6%9F%B4%E7%94%B0%E9%83%A1%E6%9D%91%E7%94%B0%E7%94%BA/ice/">柴田郡村田町（3件）</a></li><li><a href="%E6%9F%B4%E7%94%B0%E9%83%A1%E6%9F%B4%E7%94%B0%E7%94%BA/ice/">柴田郡柴田町（2件）</a></li><li><a href="%E6%A0%97%E5%8E%9F%E5%B8%82/ice/">栗原市（7件）</a></li><li><a href="%E6%B0%97%E4%BB%99%E6%B2%BC%E5%B8%82/ice/">気仙沼市（13件）</a></li><li><a href="%E7%89%A1%E9%B9%BF%E9%83%A1%E5%A5%B3%E5%B7%9D%E7%94%BA/ice/">牡鹿郡女川町（4件）</a></li><li><a href="%E7%99%BB%E7%B1%B3%E5%B8%82/ice/">登米市（10件）</a></li><li><a href="%E7%99%BD%E7%9F%B3%E5%B8%82/ice/">白石市（10件）</a></li><li><a href="%E7%9F%B3%E5%B7%BB%E5%B8%82/ice/">石巻市（10件）</a></li><li><a href="%E8%A7%92%E7%94%B0%E5%B8%82/ice/">角田市（6件）</a></li><li><a href="%E9%81%A0%E7%94%B0%E9%83%A1%E6%B6%8C%E8%B0%B7%E7%94%BA/ice/">遠田郡涌谷町（2件）</a></li><li><a href="%E9%81%A0%E7%94%B0%E9%83%A1%E7%BE%8E%E9%87%8C%E7%94%BA/ice/">遠田郡美里町（3件）</a></li><li><a href="%E9%BB%92%E5%B7%9D%E9%83%A1%E5%A4%A7%E5%92%8C%E7%94%BA/ice/">黒川郡大和町（2件）</a></li><li style="color:var(--faint)">黒川郡大衡村: フレンドビックフーズ</li><li><a href="%E9%BB%92%E5%B7%9D%E9%83%A1%E5%A4%A7%E9%83%B7%E7%94%BA/ice/">黒川郡大郷町（4件）</a></li></ul><div class="cta"><img src="../assets/app_icon.png" alt=""><div><div class="t">現在地から近い順に探すなら、地図アプリ「ヨッテコ」</div><div class="d">全国26,000件の温泉・道の駅・アイスのお店を登録不要で検索。到着時刻に営業しているかの目安も表示します。</div><div class="btnrow"><a class="btn" href="https://apps.apple.com/app/apple-store/id6790649055?pt=129161911&amp;ct=web-spots&amp;mt=8">App Storeで無料ダウンロード</a><a class="xbtn" href="https://x.com/yottecojp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg> @yottecojp をフォロー</a></div></div></div>
-<footer>掲載情報は2026年8月時点の収録データです。営業時間・料金は変更される場合があります。お出かけ前に施設へご確認ください。<br>
+<div class="hero"><h1 style="padding-right:0">宮城県の寄り道スポット（464件）</h1><p class="sub">市区町村を選ぶと、営業時間・料金つきの一覧と「最も安い／最も遅くまで開いている」施設が分かります。</p></div><h2 style="--cat:#A23F22"><img src="../assets/icons/onsen.png" alt="">日帰り温泉・銭湯・サウナ（198件）</h2><ul class="plain"><li><a href="%E4%BA%98%E7%90%86%E9%83%A1%E4%BA%98%E7%90%86%E7%94%BA/onsen/">亘理郡亘理町（2件）</a></li><li><a href="%E4%BB%99%E5%8F%B0%E5%B8%82/onsen/">仙台市（44件）</a></li><li><a href="%E4%BC%8A%E5%85%B7%E9%83%A1%E4%B8%B8%E6%A3%AE%E7%94%BA/onsen/">伊具郡丸森町（3件）</a></li><li style="color:var(--faint)">刈田郡七ヶ宿町: wood&amp;Spa や・すまっしぇ</li><li><a href="%E5%88%88%E7%94%B0%E9%83%A1%E8%94%B5%E7%8E%8B%E7%94%BA/onsen/">刈田郡蔵王町（15件）</a></li><li><a href="%E5%8A%A0%E7%BE%8E%E9%83%A1%E5%8A%A0%E7%BE%8E%E7%94%BA/onsen/">加美郡加美町（3件）</a></li><li style="color:var(--faint)">加美郡色麻町: 色麻平沢温泉 かっぱのゆ</li><li><a href="%E5%90%8D%E5%8F%96%E5%B8%82/onsen/">名取市（2件）</a></li><li><a href="%E5%A4%9A%E8%B3%80%E5%9F%8E%E5%B8%82/onsen/">多賀城市（3件）</a></li><li><a href="%E5%A4%A7%E5%B4%8E%E5%B8%82/onsen/">大崎市（56件）</a></li><li><a href="%E5%AE%AE%E5%9F%8E%E9%83%A1%E5%88%A9%E5%BA%9C%E7%94%BA/onsen/">宮城郡利府町（3件）</a></li><li><a href="%E5%AE%AE%E5%9F%8E%E9%83%A1%E6%9D%BE%E5%B3%B6%E7%94%BA/onsen/">宮城郡松島町（7件）</a></li><li><a href="%E5%AF%8C%E8%B0%B7%E5%B8%82/onsen/">富谷市（2件）</a></li><li><a href="%E5%B2%A9%E6%B2%BC%E5%B8%82/onsen/">岩沼市（3件）</a></li><li><a href="%E6%9C%AC%E5%90%89%E9%83%A1%E5%8D%97%E4%B8%89%E9%99%B8%E7%94%BA/onsen/">本吉郡南三陸町（4件）</a></li><li><a href="%E6%9D%B1%E6%9D%BE%E5%B3%B6%E5%B8%82/onsen/">東松島市（3件）</a></li><li style="color:var(--faint)">柴田郡大河原町: おおがわら天然温泉 いい湯</li><li><a href="%E6%9F%B4%E7%94%B0%E9%83%A1%E5%B7%9D%E5%B4%8E%E7%94%BA/onsen/">柴田郡川崎町（7件）</a></li><li><a href="%E6%A0%97%E5%8E%9F%E5%B8%82/onsen/">栗原市（9件）</a></li><li><a href="%E6%B0%97%E4%BB%99%E6%B2%BC%E5%B8%82/onsen/">気仙沼市（6件）</a></li><li><a href="%E7%89%A1%E9%B9%BF%E9%83%A1%E5%A5%B3%E5%B7%9D%E7%94%BA/onsen/">牡鹿郡女川町（3件）</a></li><li><a href="%E7%99%BD%E7%9F%B3%E5%B8%82/onsen/">白石市（8件）</a></li><li><a href="%E7%9F%B3%E5%B7%BB%E5%B8%82/onsen/">石巻市（5件）</a></li><li style="color:var(--faint)">角田市: 天然温泉 もみの木</li><li style="color:var(--faint)">遠田郡涌谷町: わくや天平の湯</li><li><a href="%E9%BB%92%E5%B7%9D%E9%83%A1%E5%A4%A7%E5%92%8C%E7%94%BA/onsen/">黒川郡大和町（4件）</a></li><li style="color:var(--faint)">黒川郡大郷町: リンクスのさうな</li></ul><h2 style="--cat:#15512B"><img src="../assets/icons/roadside_station.png" alt="">道の駅（19件）</h2><ul class="plain"><li style="color:var(--faint)">刈田郡七ヶ宿町: 七ヶ宿</li><li><a href="%E5%A4%A7%E5%B4%8E%E5%B8%82/michinoeki/">大崎市（3件）</a></li><li style="color:var(--faint)">本吉郡南三陸町: さんさん南三陸</li><li style="color:var(--faint)">東松島市: 東松島</li><li style="color:var(--faint)">柴田郡村田町: 村田</li><li style="color:var(--faint)">栗原市: 路田里はなやま</li><li style="color:var(--faint)">気仙沼市: 大谷海岸</li><li style="color:var(--faint)">牡鹿郡女川町: おながわ</li><li><a href="%E7%99%BB%E7%B1%B3%E5%B8%82/michinoeki/">登米市（5件）</a></li><li><a href="%E7%9F%B3%E5%B7%BB%E5%B8%82/michinoeki/">石巻市（2件）</a></li><li style="color:var(--faint)">角田市: かくだ</li><li style="color:var(--faint)">黒川郡大郷町: おおさと</li></ul><h2 style="--cat:#8A6400"><img src="../assets/icons/soft_cream.png" alt="">ソフトクリーム・ジェラート・かき氷（247件）</h2><ul class="plain"><li><a href="%E4%BA%98%E7%90%86%E9%83%A1%E4%BA%98%E7%90%86%E7%94%BA/ice/">亘理郡亘理町（4件）</a></li><li><a href="%E4%BA%98%E7%90%86%E9%83%A1%E5%B1%B1%E5%85%83%E7%94%BA/ice/">亘理郡山元町（4件）</a></li><li><a href="%E4%BB%99%E5%8F%B0%E5%B8%82/ice/">仙台市（52件）</a></li><li style="color:var(--faint)">伊具郡丸森町: 蔵の郷土館 齋理屋敷 店蔵</li><li><a href="%E5%88%88%E7%94%B0%E9%83%A1%E4%B8%83%E3%83%B6%E5%AE%BF%E7%94%BA/ice/">刈田郡七ヶ宿町（2件）</a></li><li><a href="%E5%88%88%E7%94%B0%E9%83%A1%E8%94%B5%E7%8E%8B%E7%94%BA/ice/">刈田郡蔵王町（7件）</a></li><li><a href="%E5%8A%A0%E7%BE%8E%E9%83%A1%E5%8A%A0%E7%BE%8E%E7%94%BA/ice/">加美郡加美町（5件）</a></li><li style="color:var(--faint)">加美郡色麻町: 色麻平沢温泉 かっぱのゆ（売店）</li><li><a href="%E5%90%8D%E5%8F%96%E5%B8%82/ice/">名取市（13件）</a></li><li><a href="%E5%A1%A9%E7%AB%88%E5%B8%82/ice/">塩竈市（4件）</a></li><li><a href="%E5%A4%9A%E8%B3%80%E5%9F%8E%E5%B8%82/ice/">多賀城市（5件）</a></li><li><a href="%E5%A4%A7%E5%B4%8E%E5%B8%82/ice/">大崎市（12件）</a></li><li style="color:var(--faint)">宮城郡七ヶ浜町: ソフトクリーム Nana</li><li><a href="%E5%AE%AE%E5%9F%8E%E9%83%A1%E5%88%A9%E5%BA%9C%E7%94%BA/ice/">宮城郡利府町（4件）</a></li><li><a href="%E5%AE%AE%E5%9F%8E%E9%83%A1%E6%9D%BE%E5%B3%B6%E7%94%BA/ice/">宮城郡松島町（11件）</a></li><li><a href="%E5%AF%8C%E8%B0%B7%E5%B8%82/ice/">富谷市（7件）</a></li><li><a href="%E5%B2%A9%E6%B2%BC%E5%B8%82/ice/">岩沼市（8件）</a></li><li><a href="%E6%9C%AC%E5%90%89%E9%83%A1%E5%8D%97%E4%B8%89%E9%99%B8%E7%94%BA/ice/">本吉郡南三陸町（8件）</a></li><li><a href="%E6%9D%B1%E6%9D%BE%E5%B3%B6%E5%B8%82/ice/">東松島市（8件）</a></li><li><a href="%E6%9F%B4%E7%94%B0%E9%83%A1%E5%A4%A7%E6%B2%B3%E5%8E%9F%E7%94%BA/ice/">柴田郡大河原町（6件）</a></li><li><a href="%E6%9F%B4%E7%94%B0%E9%83%A1%E5%B7%9D%E5%B4%8E%E7%94%BA/ice/">柴田郡川崎町（7件）</a></li><li><a href="%E6%9F%B4%E7%94%B0%E9%83%A1%E6%9D%91%E7%94%B0%E7%94%BA/ice/">柴田郡村田町（3件）</a></li><li><a href="%E6%9F%B4%E7%94%B0%E9%83%A1%E6%9F%B4%E7%94%B0%E7%94%BA/ice/">柴田郡柴田町（2件）</a></li><li><a href="%E6%A0%97%E5%8E%9F%E5%B8%82/ice/">栗原市（7件）</a></li><li><a href="%E6%B0%97%E4%BB%99%E6%B2%BC%E5%B8%82/ice/">気仙沼市（13件）</a></li><li><a href="%E7%89%A1%E9%B9%BF%E9%83%A1%E5%A5%B3%E5%B7%9D%E7%94%BA/ice/">牡鹿郡女川町（4件）</a></li><li><a href="%E7%99%BB%E7%B1%B3%E5%B8%82/ice/">登米市（10件）</a></li><li><a href="%E7%99%BD%E7%9F%B3%E5%B8%82/ice/">白石市（10件）</a></li><li><a href="%E7%9F%B3%E5%B7%BB%E5%B8%82/ice/">石巻市（10件）</a></li><li><a href="%E8%A7%92%E7%94%B0%E5%B8%82/ice/">角田市（6件）</a></li><li><a href="%E9%81%A0%E7%94%B0%E9%83%A1%E6%B6%8C%E8%B0%B7%E7%94%BA/ice/">遠田郡涌谷町（2件）</a></li><li><a href="%E9%81%A0%E7%94%B0%E9%83%A1%E7%BE%8E%E9%87%8C%E7%94%BA/ice/">遠田郡美里町（3件）</a></li><li><a href="%E9%BB%92%E5%B7%9D%E9%83%A1%E5%A4%A7%E5%92%8C%E7%94%BA/ice/">黒川郡大和町（2件）</a></li><li style="color:var(--faint)">黒川郡大衡村: フレンドビックフーズ</li><li><a href="%E9%BB%92%E5%B7%9D%E9%83%A1%E5%A4%A7%E9%83%B7%E7%94%BA/ice/">黒川郡大郷町（4件）</a></li></ul><div class="cta"><img src="../assets/app_icon.png" alt=""><div><div class="t">着く頃に開いているかまで確かめるなら、ヨッテコで。</div><div class="d">営業時間と現在地から、到着時刻の営業状況を目安表示します。全国26,000件の温泉・道の駅・アイスのお店を、登録不要・無料で。</div><div class="btnrow"><a class="btn" href="https://apps.apple.com/app/apple-store/id6790649055?pt=129161911&amp;ct=web-spots&amp;mt=8">App Storeで無料ダウンロード</a><a class="xbtn" href="https://x.com/yottecojp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg> @yottecojp をフォロー</a></div></div></div>
+<footer>掲載情報は2026年9月時点の収録データです。営業時間・料金は変更される場合があります。お出かけ前に施設へご確認ください。<br>
 © ヨッテコ - 温泉・道の駅・ソフトクリーム寄り道スポット検索
 <a class="xfoot" href="https://x.com/yottecojp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg> @yottecojp</a></footer>
-</div><!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "46db72568f924c3ea9c21818cd28b53f"}'></script><!-- End Cloudflare Web Analytics --></body></html>
+</div>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "46db72568f924c3ea9c21818cd28b53f"}'></script><!-- End Cloudflare Web Analytics -->
+</body></html>

@@ -3,15 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>山形県の日帰り温泉・道の駅・アイスのお店一覧【2026年8月版】｜ヨッテコ</title>
-<meta name="description" content="山形県の日帰り温泉・銭湯、道の駅、ソフトクリーム店 計460件を市区町村別に掲載（2026年8月時点）。">
+<title>山形県の日帰り温泉・道の駅・アイスのお店一覧【2026年9月版】｜ヨッテコ</title>
+<meta name="description" content="山形県の日帰り温泉・銭湯、道の駅、ソフトクリーム店 計460件を市区町村別に掲載（2026年9月時点）。">
 <link rel="canonical" href="https://spots.yotteco.jp/%E5%B1%B1%E5%BD%A2%E7%9C%8C/">
 <link rel="icon" type="image/png" href="https://spots.yotteco.jp/assets/app_icon.png">
 <link rel="apple-touch-icon" href="https://spots.yotteco.jp/assets/app_icon.png">
 <meta property="og:site_name" content="ヨッテコ">
 <meta property="og:type" content="website">
-<meta property="og:title" content="山形県の日帰り温泉・道の駅・アイスのお店一覧【2026年8月版】｜ヨッテコ">
-<meta property="og:description" content="山形県の日帰り温泉・銭湯、道の駅、ソフトクリーム店 計460件を市区町村別に掲載（2026年8月時点）。">
+<meta property="og:title" content="山形県の日帰り温泉・道の駅・アイスのお店一覧【2026年9月版】｜ヨッテコ">
+<meta property="og:description" content="山形県の日帰り温泉・銭湯、道の駅、ソフトクリーム店 計460件を市区町村別に掲載（2026年9月時点）。">
 <meta property="og:url" content="https://spots.yotteco.jp/%E5%B1%B1%E5%BD%A2%E7%9C%8C/">
 <meta property="og:image" content="https://spots.yotteco.jp/og.png">
 <meta property="og:image:width" content="1200">
@@ -178,13 +178,127 @@ padding:6px 20px 14px;margin:12px 0;font-size:14.5px}
  .hens .hl{font-size:11px}
  .hens .hr{font-size:9px}
 }
+
+/* ---- 見出しの件数注記 ---- */
+h2 .cnt{font-size:12.5px;color:var(--faint);font-weight:600;margin-left:2px}
+/* ---- 施設一覧（5件）と表内のアプリ導線 ---- */
+.showcase td.hrs,.showcase td.prc{white-space:nowrap;font-variant-numeric:tabular-nums}
+.showcase .tag.roten{border-color:#C8A6A0;color:#8A3A2A;background:#FBF0EC}
+.showcase .tag.sauna{border-color:#A7BDB3;color:var(--pine);background:#EDF4EF}
+.more{display:flex;align-items:center;gap:14px;padding:14px 16px;background:var(--paper2);border-top:1px solid var(--line)}
+.more .ic{flex:none;width:40px;height:40px;border-radius:10px;background:#fff;display:grid;place-items:center}
+.more .ic svg{width:24px;height:24px;display:block}
+.more .t{flex:1;min-width:200px}
+.more .t b{display:block;font-size:14.5px;line-height:1.55}
+.more .t span{display:block;font-size:12.5px;color:var(--faint);margin-top:1px}
+.more .btn{flex:none;text-decoration:none;font-weight:800;font-size:13.5px;padding:9px 16px;border-radius:9px;background:var(--pine);color:var(--paper);white-space:nowrap;margin:0}
+/* ---- 定休・料金の2枚 ---- */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:12px 0}
+.two.one{grid-template-columns:1fr;max-width:560px}
+.box{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 16px 12px;font-size:14px}
+.box h4{margin:0 0 6px;font-size:13.5px}
+.box p{margin:0;line-height:1.85}
+.bars{display:grid;grid-template-columns:auto 1fr auto;gap:4px 10px;align-items:center;font-size:13px;font-variant-numeric:tabular-nums}
+.bars .b{height:12px;border-radius:3px;background:var(--cat);opacity:.8}
+.bars .k{color:var(--soft);white-space:nowrap}
+.bars .n{font-weight:700;text-align:right}
+/* ---- 数字で見る ---- */
+.numsec{margin-top:36px;padding-top:6px;border-top:1px solid var(--line)}
+.numsec .eyebrow{margin-top:18px}
+.h3note{font-size:12.5px;color:var(--faint);margin:-4px 0 12px}
+.prose{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 20px;margin:12px 0;font-size:14.5px;line-height:1.95}
+.prose p{margin:0}
+.prose p+p{margin-top:8px}
+.photos figcaption{color:var(--soft);font-size:12px}
+.photos .cr{color:var(--faint);font-size:11px;opacity:1}
+/* 全国での位置カード（旧 .hens の置き換え） */
+.rankrow{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:6px 0 4px}
+.rank{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);
+border-radius:12px;padding:12px 14px 12px;color:var(--ink);position:relative;--c:var(--cat)}
+.rank.on{border:2px solid var(--c);box-shadow:0 2px 8px rgba(22,36,31,.08)}
+.rank .cat{font-size:12.5px;font-weight:700;color:var(--soft);display:flex;justify-content:space-between;gap:6px}
+.rank .cat i{font-style:normal;color:var(--faint);font-weight:600}
+.rank .num{margin-top:2px;font-variant-numeric:tabular-nums;line-height:1.15;display:flex;align-items:baseline;gap:4px;flex-wrap:wrap}
+.rank .num b{font-size:34px;font-weight:800;color:var(--c)}
+.rank .num b small{font-size:14px;font-weight:700;color:var(--soft);margin-left:1px}
+.rank .num span{font-size:12.5px;color:var(--faint);font-weight:600}
+.rank .tier{display:block;font-size:12.5px;font-weight:800;color:var(--c);margin-top:2px}
+.strip{display:block;position:relative;height:8px;border-radius:4px;margin:12px 0 4px;
+background:linear-gradient(90deg,var(--c) 0%,var(--strong) 45%,var(--paper2) 100%)}
+.strip i{position:absolute;top:50%;width:14px;height:14px;border-radius:50%;background:#fff;
+border:3px solid var(--c);transform:translate(-50%,-50%);box-shadow:0 1px 3px rgba(22,36,31,.3)}
+.scale{display:flex;justify-content:space-between;font-size:10.5px;color:var(--faint);font-variant-numeric:tabular-nums}
+/* 全国平均との比較（レーダー＋表） */
+.cmp{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 18px 12px;margin:12px 0}
+.legend{display:flex;gap:16px;font-size:12.5px;font-weight:700;color:var(--soft);flex-wrap:wrap;align-items:center}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend .sw{width:22px;height:0;border-top:3px solid var(--cat);border-radius:2px}
+.legend .sw.nat{border-top:3px dashed #7A8078}
+.legend .note{font-weight:600;color:var(--faint);margin-left:auto}
+.cmpbody{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:14px 22px;align-items:center;margin-top:6px}
+.cmpbody svg{width:100%;height:auto;display:block;max-width:460px;margin:0 auto}
+.cmpbody svg text{font-family:inherit}
+.cmpbody svg.radar-sp{display:none}
+.vt{width:100%;border-collapse:collapse;font-size:13.5px;font-variant-numeric:tabular-nums}
+.vt th{font-size:11px;color:var(--faint);font-weight:700;text-align:right;padding:2px 6px;border-bottom:1px solid var(--line);white-space:nowrap;background:none}
+.vt th:first-child{text-align:left}
+.vt td{padding:6px 6px;text-align:right;border-bottom:1px solid var(--line)}
+.vt td:first-child{text-align:left;font-weight:700}
+.vt tr:last-child td{border-bottom:0}
+.vt .m{color:var(--cat);font-weight:800}
+.vt .n{color:#7A8078}
+.vt .d{font-size:12px;font-weight:700}
+.vt .d.up{color:var(--cat)}.vt .d.dn{color:var(--pine)}.vt .d.ev{color:var(--faint)}
+.pricecmp{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:12px;padding-top:12px;border-top:1px dashed var(--line);font-size:13.5px}
+.pricecmp .lab{font-weight:700;min-width:120px}
+.pricecmp svg{flex:1;min-width:200px;height:auto}
+.pricecmp .note{font-size:12px;color:var(--faint)}
+.summary{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 20px;margin:12px 0;font-size:14.5px;line-height:1.95}
+.summary p{margin:0}
+.summary p+p{margin-top:8px}
+.src{font-size:11.5px;color:var(--faint);line-height:1.8;margin-top:8px}
+.src summary{cursor:pointer;font-weight:700}
+/* スマホだけ: 一覧を読み終えて下へ進んだら、画面下に固定のアプリ導線を出す */
+.stickybar{display:none}
+@media(max-width:640px){
+ h2{flex-wrap:wrap}h2 .cnt{width:100%;margin:-2px 0 0 19px}
+ .more{flex-wrap:wrap}.more .btn{width:100%;text-align:center}
+ .showcase{overflow-x:visible}
+ .showcase table,.showcase thead,.showcase tbody,.showcase tr,.showcase td{display:block}
+ .showcase thead{display:none}
+ .showcase tr{padding:10px 14px;border-bottom:1px solid var(--line)}
+ .showcase tbody tr:last-child{border-bottom:none}
+ .showcase td{padding:0;border:0}
+ .showcase td.hrs,.showcase td.prc{display:inline;white-space:normal;font-size:13px;color:var(--soft)}
+ .showcase td.hrs::before{content:"営業 ";color:var(--faint);font-size:11.5px}
+ .showcase td.prc::before{content:"\3000 料金 ";color:var(--faint);font-size:11.5px}
+ .two{grid-template-columns:1fr}
+ .stats{grid-template-columns:1fr 1fr}
+ .rankrow{grid-template-columns:1fr;gap:8px}
+ .rank .num b{font-size:30px}
+ .cmpbody{grid-template-columns:1fr}
+ .cmpbody svg.radar-pc{display:none}.cmpbody svg.radar-sp{display:block}
+ .pricecmp .lab{min-width:0;width:100%}
+ .stickybar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:20;align-items:center;gap:10px;
+  padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:var(--pine);color:var(--paper);
+  box-shadow:0 -4px 16px rgba(22,36,31,.18);transform:translateY(110%);transition:transform .25s ease}
+ .stickybar.show{transform:none}
+ .stickybar .t{flex:1;min-width:0;font-size:12.5px;line-height:1.45}
+ .stickybar .t b{display:block;font-size:13.5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+ .stickybar .btn{flex:none;text-decoration:none;font-weight:800;font-size:13px;padding:9px 14px;border-radius:9px;background:var(--paper);color:var(--pine);white-space:nowrap;margin:0}
+ .stickybar .x{flex:none;width:30px;height:30px;border:0;background:transparent;color:var(--paper);font-size:20px;line-height:1;cursor:pointer;opacity:.75;padding:0}
+ body.hasbar .wrap{padding-bottom:calc(84px + env(safe-area-inset-bottom,0px))}
+ @media(prefers-reduced-motion:reduce){.stickybar{transition:none}}
+}
 </style>
 </head>
 <body><div class="wrap">
 <div class="topbar"><a href="../"><img src="../assets/app_icon.png" alt="ヨッテコ"><span class="wm">ヨッテコ</span><span class="tg">旅先で、さがせる。</span></a></div>
 <div class="crumb"><a href="../">全国</a> › 山形県</div>
-<div class="hero"><h1 style="padding-right:0">山形県の寄り道スポット（460件）</h1><p class="sub">市区町村を選ぶと、営業時間・料金つきの一覧と「最も安い／最も遅くまで開いている」施設が分かります。</p></div><h2 style="--cat:#A23F22"><img src="../assets/icons/onsen.png" alt="">日帰り温泉・銭湯・サウナ（245件）</h2><ul class="plain"><li><a href="%E4%B8%8A%E5%B1%B1%E5%B8%82/onsen/">上山市（16件）</a></li><li><a href="%E5%8D%97%E9%99%BD%E5%B8%82/onsen/">南陽市（8件）</a></li><li><a href="%E5%A4%A9%E7%AB%A5%E5%B8%82/onsen/">天童市（11件）</a></li><li><a href="%E5%AF%92%E6%B2%B3%E6%B1%9F%E5%B8%82/onsen/">寒河江市（6件）</a></li><li><a href="%E5%B0%BE%E8%8A%B1%E6%B2%A2%E5%B8%82/onsen/">尾花沢市（7件）</a></li><li><a href="%E5%B1%B1%E5%BD%A2%E5%B8%82/onsen/">山形市（44件）</a></li><li><a href="%E6%96%B0%E5%BA%84%E5%B8%82/onsen/">新庄市（2件）</a></li><li><a href="%E6%9C%80%E4%B8%8A%E9%83%A1%E5%A4%A7%E8%94%B5%E6%9D%91/onsen/">最上郡大蔵村（13件）</a></li><li style="color:var(--faint)">最上郡戸沢村: いきいきランド ぽんぽ館</li><li><a href="%E6%9C%80%E4%B8%8A%E9%83%A1%E6%9C%80%E4%B8%8A%E7%94%BA/onsen/">最上郡最上町（16件）</a></li><li style="color:var(--faint)">最上郡真室川町: まむろ川温泉 梅里苑</li><li style="color:var(--faint)">最上郡舟形町: 舟形若あゆ温泉 清流センター</li><li style="color:var(--faint)">最上郡金山町: 神室温泉 ホットハウスカムロ</li><li><a href="%E6%9C%80%E4%B8%8A%E9%83%A1%E9%AE%AD%E5%B7%9D%E6%9D%91/onsen/">最上郡鮭川村（3件）</a></li><li><a href="%E6%9D%91%E5%B1%B1%E5%B8%82/onsen/">村山市（2件）</a></li><li style="color:var(--faint)">東村山郡中山町: ひまわり温泉 ゆ・ら・ら</li><li style="color:var(--faint)">東村山郡山辺町: 山辺温泉保養センター</li><li><a href="%E6%9D%B1%E6%A0%B9%E5%B8%82/onsen/">東根市（7件）</a></li><li style="color:var(--faint)">東田川郡三川町: なの花温泉 田田</li><li><a href="%E6%9D%B1%E7%94%B0%E5%B7%9D%E9%83%A1%E5%BA%84%E5%86%85%E7%94%BA/onsen/">東田川郡庄内町（2件）</a></li><li style="color:var(--faint)">東置賜郡川西町: 川西町浴浴センターまどか</li><li><a href="%E6%9D%B1%E7%BD%AE%E8%B3%9C%E9%83%A1%E9%AB%98%E7%95%A0%E7%94%BA/onsen/">東置賜郡高畠町（2件）</a></li><li><a href="%E7%B1%B3%E6%B2%A2%E5%B8%82/onsen/">米沢市（26件）</a></li><li><a href="%E8%A5%BF%E6%9D%91%E5%B1%B1%E9%83%A1%E5%A4%A7%E6%B1%9F%E7%94%BA/onsen/">西村山郡大江町（3件）</a></li><li><a href="%E8%A5%BF%E6%9D%91%E5%B1%B1%E9%83%A1%E6%9C%9D%E6%97%A5%E7%94%BA/onsen/">西村山郡朝日町（3件）</a></li><li><a href="%E8%A5%BF%E6%9D%91%E5%B1%B1%E9%83%A1%E6%B2%B3%E5%8C%97%E7%94%BA/onsen/">西村山郡河北町（2件）</a></li><li><a href="%E8%A5%BF%E6%9D%91%E5%B1%B1%E9%83%A1%E8%A5%BF%E5%B7%9D%E7%94%BA/onsen/">西村山郡西川町（10件）</a></li><li><a href="%E8%A5%BF%E7%BD%AE%E8%B3%9C%E9%83%A1%E5%B0%8F%E5%9B%BD%E7%94%BA/onsen/">西置賜郡小国町（6件）</a></li><li><a href="%E8%A5%BF%E7%BD%AE%E8%B3%9C%E9%83%A1%E7%99%BD%E9%B7%B9%E7%94%BA/onsen/">西置賜郡白鷹町（3件）</a></li><li><a href="%E8%A5%BF%E7%BD%AE%E8%B3%9C%E9%83%A1%E9%A3%AF%E8%B1%8A%E7%94%BA/onsen/">西置賜郡飯豊町（2件）</a></li><li><a href="%E9%85%92%E7%94%B0%E5%B8%82/onsen/">酒田市（8件）</a></li><li><a href="%E9%95%B7%E4%BA%95%E5%B8%82/onsen/">長井市（3件）</a></li><li><a href="%E9%A3%BD%E6%B5%B7%E9%83%A1%E9%81%8A%E4%BD%90%E7%94%BA/onsen/">飽海郡遊佐町（3件）</a></li><li><a href="%E9%B6%B4%E5%B2%A1%E5%B8%82/onsen/">鶴岡市（29件）</a></li></ul><h2 style="--cat:#15512B"><img src="../assets/icons/roadside_station.png" alt="">道の駅（24件）</h2><ul class="plain"><li style="color:var(--faint)">天童市: 天童温泉</li><li style="color:var(--faint)">寒河江市: 寒河江</li><li style="color:var(--faint)">尾花沢市: 尾花沢</li><li style="color:var(--faint)">山形市: やまがた蔵王</li><li style="color:var(--faint)">新庄市: 新庄エコロジーガーデン原蚕の杜</li><li style="color:var(--faint)">最上郡戸沢村: とざわ</li><li style="color:var(--faint)">最上郡最上町: もがみ</li><li style="color:var(--faint)">村山市: むらやま</li><li style="color:var(--faint)">東田川郡三川町: 庄内みかわ</li><li style="color:var(--faint)">東田川郡庄内町: しょうない</li><li style="color:var(--faint)">東置賜郡高畠町: たかはた</li><li><a href="%E7%B1%B3%E6%B2%A2%E5%B8%82/michinoeki/">米沢市（2件）</a></li><li style="color:var(--faint)">西村山郡大江町: おおえ</li><li style="color:var(--faint)">西村山郡朝日町: あさひまち</li><li style="color:var(--faint)">西村山郡河北町: 河北</li><li style="color:var(--faint)">西村山郡西川町: にしかわ</li><li style="color:var(--faint)">西置賜郡小国町: 白い森おぐに</li><li style="color:var(--faint)">西置賜郡白鷹町: 白鷹ヤナ公園</li><li style="color:var(--faint)">西置賜郡飯豊町: いいで</li><li style="color:var(--faint)">長井市: 川のみなと長井</li><li style="color:var(--faint)">飽海郡遊佐町: 鳥海</li><li><a href="%E9%B6%B4%E5%B2%A1%E5%B8%82/michinoeki/">鶴岡市（2件）</a></li></ul><h2 style="--cat:#8A6400"><img src="../assets/icons/soft_cream.png" alt="">ソフトクリーム・ジェラート・かき氷（191件）</h2><ul class="plain"><li><a href="%E4%B8%8A%E5%B1%B1%E5%B8%82/ice/">上山市（11件）</a></li><li><a href="%E5%8C%97%E6%9D%91%E5%B1%B1%E9%83%A1%E5%A4%A7%E7%9F%B3%E7%94%B0%E7%94%BA/ice/">北村山郡大石田町（2件）</a></li><li><a href="%E5%8D%97%E9%99%BD%E5%B8%82/ice/">南陽市（9件）</a></li><li><a href="%E5%A4%A9%E7%AB%A5%E5%B8%82/ice/">天童市（13件）</a></li><li><a href="%E5%AF%92%E6%B2%B3%E6%B1%9F%E5%B8%82/ice/">寒河江市（9件）</a></li><li><a href="%E5%B0%BE%E8%8A%B1%E6%B2%A2%E5%B8%82/ice/">尾花沢市（8件）</a></li><li><a href="%E5%B1%B1%E5%BD%A2%E5%B8%82/ice/">山形市（19件）</a></li><li><a href="%E6%96%B0%E5%BA%84%E5%B8%82/ice/">新庄市（7件）</a></li><li style="color:var(--faint)">最上郡大蔵村: 肘折いでゆ館 (大蔵村観光協会)(Hijiori Ideyukan)</li><li><a href="%E6%9C%80%E4%B8%8A%E9%83%A1%E6%88%B8%E6%B2%A2%E6%9D%91/ice/">最上郡戸沢村（2件）</a></li><li><a href="%E6%9C%80%E4%B8%8A%E9%83%A1%E6%9C%80%E4%B8%8A%E7%94%BA/ice/">最上郡最上町（3件）</a></li><li style="color:var(--faint)">最上郡真室川町: 真室川町 森の停車場</li><li style="color:var(--faint)">最上郡舟形町: 舟形町観光物産センターめがみ</li><li style="color:var(--faint)">最上郡金山町: 岸伝八菓子店</li><li style="color:var(--faint)">最上郡鮭川村: 野崎冷菓店</li><li><a href="%E6%9D%91%E5%B1%B1%E5%B8%82/ice/">村山市（3件）</a></li><li><a href="%E6%9D%B1%E6%9D%91%E5%B1%B1%E9%83%A1%E4%B8%AD%E5%B1%B1%E7%94%BA/ice/">東村山郡中山町（2件）</a></li><li><a href="%E6%9D%B1%E6%9D%91%E5%B1%B1%E9%83%A1%E5%B1%B1%E8%BE%BA%E7%94%BA/ice/">東村山郡山辺町（5件）</a></li><li><a href="%E6%9D%B1%E6%A0%B9%E5%B8%82/ice/">東根市（5件）</a></li><li><a href="%E6%9D%B1%E7%94%B0%E5%B7%9D%E9%83%A1%E4%B8%89%E5%B7%9D%E7%94%BA/ice/">東田川郡三川町（2件）</a></li><li><a href="%E6%9D%B1%E7%94%B0%E5%B7%9D%E9%83%A1%E5%BA%84%E5%86%85%E7%94%BA/ice/">東田川郡庄内町（2件）</a></li><li><a href="%E6%9D%B1%E7%BD%AE%E8%B3%9C%E9%83%A1%E5%B7%9D%E8%A5%BF%E7%94%BA/ice/">東置賜郡川西町（4件）</a></li><li><a href="%E6%9D%B1%E7%BD%AE%E8%B3%9C%E9%83%A1%E9%AB%98%E7%95%A0%E7%94%BA/ice/">東置賜郡高畠町（5件）</a></li><li><a href="%E7%B1%B3%E6%B2%A2%E5%B8%82/ice/">米沢市（18件）</a></li><li><a href="%E8%A5%BF%E6%9D%91%E5%B1%B1%E9%83%A1%E5%A4%A7%E6%B1%9F%E7%94%BA/ice/">西村山郡大江町（3件）</a></li><li style="color:var(--faint)">西村山郡朝日町: 道の駅 あさひまち『りんごの森』</li><li><a href="%E8%A5%BF%E6%9D%91%E5%B1%B1%E9%83%A1%E6%B2%B3%E5%8C%97%E7%94%BA/ice/">西村山郡河北町（4件）</a></li><li style="color:var(--faint)">西村山郡西川町: 月山銘水館</li><li><a href="%E8%A5%BF%E7%BD%AE%E8%B3%9C%E9%83%A1%E5%B0%8F%E5%9B%BD%E7%94%BA/ice/">西置賜郡小国町（5件）</a></li><li><a href="%E8%A5%BF%E7%BD%AE%E8%B3%9C%E9%83%A1%E7%99%BD%E9%B7%B9%E7%94%BA/ice/">西置賜郡白鷹町（2件）</a></li><li><a href="%E8%A5%BF%E7%BD%AE%E8%B3%9C%E9%83%A1%E9%A3%AF%E8%B1%8A%E7%94%BA/ice/">西置賜郡飯豊町（6件）</a></li><li><a href="%E9%85%92%E7%94%B0%E5%B8%82/ice/">酒田市（11件）</a></li><li><a href="%E9%95%B7%E4%BA%95%E5%B8%82/ice/">長井市（6件）</a></li><li><a href="%E9%A3%BD%E6%B5%B7%E9%83%A1%E9%81%8A%E4%BD%90%E7%94%BA/ice/">飽海郡遊佐町（5件）</a></li><li><a href="%E9%B6%B4%E5%B2%A1%E5%B8%82/ice/">鶴岡市（13件）</a></li></ul><div class="cta"><img src="../assets/app_icon.png" alt=""><div><div class="t">現在地から近い順に探すなら、地図アプリ「ヨッテコ」</div><div class="d">全国26,000件の温泉・道の駅・アイスのお店を登録不要で検索。到着時刻に営業しているかの目安も表示します。</div><div class="btnrow"><a class="btn" href="https://apps.apple.com/app/apple-store/id6790649055?pt=129161911&amp;ct=web-spots&amp;mt=8">App Storeで無料ダウンロード</a><a class="xbtn" href="https://x.com/yottecojp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg> @yottecojp をフォロー</a></div></div></div>
-<footer>掲載情報は2026年8月時点の収録データです。営業時間・料金は変更される場合があります。お出かけ前に施設へご確認ください。<br>
+<div class="hero"><h1 style="padding-right:0">山形県の寄り道スポット（460件）</h1><p class="sub">市区町村を選ぶと、営業時間・料金つきの一覧と「最も安い／最も遅くまで開いている」施設が分かります。</p></div><h2 style="--cat:#A23F22"><img src="../assets/icons/onsen.png" alt="">日帰り温泉・銭湯・サウナ（245件）</h2><ul class="plain"><li><a href="%E4%B8%8A%E5%B1%B1%E5%B8%82/onsen/">上山市（16件）</a></li><li><a href="%E5%8D%97%E9%99%BD%E5%B8%82/onsen/">南陽市（8件）</a></li><li><a href="%E5%A4%A9%E7%AB%A5%E5%B8%82/onsen/">天童市（11件）</a></li><li><a href="%E5%AF%92%E6%B2%B3%E6%B1%9F%E5%B8%82/onsen/">寒河江市（6件）</a></li><li><a href="%E5%B0%BE%E8%8A%B1%E6%B2%A2%E5%B8%82/onsen/">尾花沢市（7件）</a></li><li><a href="%E5%B1%B1%E5%BD%A2%E5%B8%82/onsen/">山形市（44件）</a></li><li><a href="%E6%96%B0%E5%BA%84%E5%B8%82/onsen/">新庄市（2件）</a></li><li><a href="%E6%9C%80%E4%B8%8A%E9%83%A1%E5%A4%A7%E8%94%B5%E6%9D%91/onsen/">最上郡大蔵村（13件）</a></li><li style="color:var(--faint)">最上郡戸沢村: いきいきランド ぽんぽ館</li><li><a href="%E6%9C%80%E4%B8%8A%E9%83%A1%E6%9C%80%E4%B8%8A%E7%94%BA/onsen/">最上郡最上町（16件）</a></li><li style="color:var(--faint)">最上郡真室川町: まむろ川温泉 梅里苑</li><li style="color:var(--faint)">最上郡舟形町: 舟形若あゆ温泉 清流センター</li><li style="color:var(--faint)">最上郡金山町: 神室温泉 ホットハウスカムロ</li><li><a href="%E6%9C%80%E4%B8%8A%E9%83%A1%E9%AE%AD%E5%B7%9D%E6%9D%91/onsen/">最上郡鮭川村（3件）</a></li><li><a href="%E6%9D%91%E5%B1%B1%E5%B8%82/onsen/">村山市（2件）</a></li><li style="color:var(--faint)">東村山郡中山町: ひまわり温泉 ゆ・ら・ら</li><li style="color:var(--faint)">東村山郡山辺町: 山辺温泉保養センター</li><li><a href="%E6%9D%B1%E6%A0%B9%E5%B8%82/onsen/">東根市（7件）</a></li><li style="color:var(--faint)">東田川郡三川町: なの花温泉 田田</li><li><a href="%E6%9D%B1%E7%94%B0%E5%B7%9D%E9%83%A1%E5%BA%84%E5%86%85%E7%94%BA/onsen/">東田川郡庄内町（2件）</a></li><li style="color:var(--faint)">東置賜郡川西町: 川西町浴浴センターまどか</li><li><a href="%E6%9D%B1%E7%BD%AE%E8%B3%9C%E9%83%A1%E9%AB%98%E7%95%A0%E7%94%BA/onsen/">東置賜郡高畠町（2件）</a></li><li><a href="%E7%B1%B3%E6%B2%A2%E5%B8%82/onsen/">米沢市（26件）</a></li><li><a href="%E8%A5%BF%E6%9D%91%E5%B1%B1%E9%83%A1%E5%A4%A7%E6%B1%9F%E7%94%BA/onsen/">西村山郡大江町（3件）</a></li><li><a href="%E8%A5%BF%E6%9D%91%E5%B1%B1%E9%83%A1%E6%9C%9D%E6%97%A5%E7%94%BA/onsen/">西村山郡朝日町（3件）</a></li><li><a href="%E8%A5%BF%E6%9D%91%E5%B1%B1%E9%83%A1%E6%B2%B3%E5%8C%97%E7%94%BA/onsen/">西村山郡河北町（2件）</a></li><li><a href="%E8%A5%BF%E6%9D%91%E5%B1%B1%E9%83%A1%E8%A5%BF%E5%B7%9D%E7%94%BA/onsen/">西村山郡西川町（10件）</a></li><li><a href="%E8%A5%BF%E7%BD%AE%E8%B3%9C%E9%83%A1%E5%B0%8F%E5%9B%BD%E7%94%BA/onsen/">西置賜郡小国町（6件）</a></li><li><a href="%E8%A5%BF%E7%BD%AE%E8%B3%9C%E9%83%A1%E7%99%BD%E9%B7%B9%E7%94%BA/onsen/">西置賜郡白鷹町（3件）</a></li><li><a href="%E8%A5%BF%E7%BD%AE%E8%B3%9C%E9%83%A1%E9%A3%AF%E8%B1%8A%E7%94%BA/onsen/">西置賜郡飯豊町（2件）</a></li><li><a href="%E9%85%92%E7%94%B0%E5%B8%82/onsen/">酒田市（8件）</a></li><li><a href="%E9%95%B7%E4%BA%95%E5%B8%82/onsen/">長井市（3件）</a></li><li><a href="%E9%A3%BD%E6%B5%B7%E9%83%A1%E9%81%8A%E4%BD%90%E7%94%BA/onsen/">飽海郡遊佐町（3件）</a></li><li><a href="%E9%B6%B4%E5%B2%A1%E5%B8%82/onsen/">鶴岡市（29件）</a></li></ul><h2 style="--cat:#15512B"><img src="../assets/icons/roadside_station.png" alt="">道の駅（24件）</h2><ul class="plain"><li style="color:var(--faint)">天童市: 天童温泉</li><li style="color:var(--faint)">寒河江市: 寒河江</li><li style="color:var(--faint)">尾花沢市: 尾花沢</li><li style="color:var(--faint)">山形市: やまがた蔵王</li><li style="color:var(--faint)">新庄市: 新庄エコロジーガーデン原蚕の杜</li><li style="color:var(--faint)">最上郡戸沢村: とざわ</li><li style="color:var(--faint)">最上郡最上町: もがみ</li><li style="color:var(--faint)">村山市: むらやま</li><li style="color:var(--faint)">東田川郡三川町: 庄内みかわ</li><li style="color:var(--faint)">東田川郡庄内町: しょうない</li><li style="color:var(--faint)">東置賜郡高畠町: たかはた</li><li><a href="%E7%B1%B3%E6%B2%A2%E5%B8%82/michinoeki/">米沢市（2件）</a></li><li style="color:var(--faint)">西村山郡大江町: おおえ</li><li style="color:var(--faint)">西村山郡朝日町: あさひまち</li><li style="color:var(--faint)">西村山郡河北町: 河北</li><li style="color:var(--faint)">西村山郡西川町: にしかわ</li><li style="color:var(--faint)">西置賜郡小国町: 白い森おぐに</li><li style="color:var(--faint)">西置賜郡白鷹町: 白鷹ヤナ公園</li><li style="color:var(--faint)">西置賜郡飯豊町: いいで</li><li style="color:var(--faint)">長井市: 川のみなと長井</li><li style="color:var(--faint)">飽海郡遊佐町: 鳥海</li><li><a href="%E9%B6%B4%E5%B2%A1%E5%B8%82/michinoeki/">鶴岡市（2件）</a></li></ul><h2 style="--cat:#8A6400"><img src="../assets/icons/soft_cream.png" alt="">ソフトクリーム・ジェラート・かき氷（191件）</h2><ul class="plain"><li><a href="%E4%B8%8A%E5%B1%B1%E5%B8%82/ice/">上山市（11件）</a></li><li><a href="%E5%8C%97%E6%9D%91%E5%B1%B1%E9%83%A1%E5%A4%A7%E7%9F%B3%E7%94%B0%E7%94%BA/ice/">北村山郡大石田町（2件）</a></li><li><a href="%E5%8D%97%E9%99%BD%E5%B8%82/ice/">南陽市（9件）</a></li><li><a href="%E5%A4%A9%E7%AB%A5%E5%B8%82/ice/">天童市（13件）</a></li><li><a href="%E5%AF%92%E6%B2%B3%E6%B1%9F%E5%B8%82/ice/">寒河江市（9件）</a></li><li><a href="%E5%B0%BE%E8%8A%B1%E6%B2%A2%E5%B8%82/ice/">尾花沢市（8件）</a></li><li><a href="%E5%B1%B1%E5%BD%A2%E5%B8%82/ice/">山形市（19件）</a></li><li><a href="%E6%96%B0%E5%BA%84%E5%B8%82/ice/">新庄市（7件）</a></li><li style="color:var(--faint)">最上郡大蔵村: 肘折いでゆ館 (大蔵村観光協会)(Hijiori Ideyukan)</li><li><a href="%E6%9C%80%E4%B8%8A%E9%83%A1%E6%88%B8%E6%B2%A2%E6%9D%91/ice/">最上郡戸沢村（2件）</a></li><li><a href="%E6%9C%80%E4%B8%8A%E9%83%A1%E6%9C%80%E4%B8%8A%E7%94%BA/ice/">最上郡最上町（3件）</a></li><li style="color:var(--faint)">最上郡真室川町: 真室川町 森の停車場</li><li style="color:var(--faint)">最上郡舟形町: 舟形町観光物産センターめがみ</li><li style="color:var(--faint)">最上郡金山町: 岸伝八菓子店</li><li style="color:var(--faint)">最上郡鮭川村: 野崎冷菓店</li><li><a href="%E6%9D%91%E5%B1%B1%E5%B8%82/ice/">村山市（3件）</a></li><li><a href="%E6%9D%B1%E6%9D%91%E5%B1%B1%E9%83%A1%E4%B8%AD%E5%B1%B1%E7%94%BA/ice/">東村山郡中山町（2件）</a></li><li><a href="%E6%9D%B1%E6%9D%91%E5%B1%B1%E9%83%A1%E5%B1%B1%E8%BE%BA%E7%94%BA/ice/">東村山郡山辺町（5件）</a></li><li><a href="%E6%9D%B1%E6%A0%B9%E5%B8%82/ice/">東根市（5件）</a></li><li><a href="%E6%9D%B1%E7%94%B0%E5%B7%9D%E9%83%A1%E4%B8%89%E5%B7%9D%E7%94%BA/ice/">東田川郡三川町（2件）</a></li><li><a href="%E6%9D%B1%E7%94%B0%E5%B7%9D%E9%83%A1%E5%BA%84%E5%86%85%E7%94%BA/ice/">東田川郡庄内町（2件）</a></li><li><a href="%E6%9D%B1%E7%BD%AE%E8%B3%9C%E9%83%A1%E5%B7%9D%E8%A5%BF%E7%94%BA/ice/">東置賜郡川西町（4件）</a></li><li><a href="%E6%9D%B1%E7%BD%AE%E8%B3%9C%E9%83%A1%E9%AB%98%E7%95%A0%E7%94%BA/ice/">東置賜郡高畠町（5件）</a></li><li><a href="%E7%B1%B3%E6%B2%A2%E5%B8%82/ice/">米沢市（18件）</a></li><li><a href="%E8%A5%BF%E6%9D%91%E5%B1%B1%E9%83%A1%E5%A4%A7%E6%B1%9F%E7%94%BA/ice/">西村山郡大江町（3件）</a></li><li style="color:var(--faint)">西村山郡朝日町: 道の駅 あさひまち『りんごの森』</li><li><a href="%E8%A5%BF%E6%9D%91%E5%B1%B1%E9%83%A1%E6%B2%B3%E5%8C%97%E7%94%BA/ice/">西村山郡河北町（4件）</a></li><li style="color:var(--faint)">西村山郡西川町: 月山銘水館</li><li><a href="%E8%A5%BF%E7%BD%AE%E8%B3%9C%E9%83%A1%E5%B0%8F%E5%9B%BD%E7%94%BA/ice/">西置賜郡小国町（5件）</a></li><li><a href="%E8%A5%BF%E7%BD%AE%E8%B3%9C%E9%83%A1%E7%99%BD%E9%B7%B9%E7%94%BA/ice/">西置賜郡白鷹町（2件）</a></li><li><a href="%E8%A5%BF%E7%BD%AE%E8%B3%9C%E9%83%A1%E9%A3%AF%E8%B1%8A%E7%94%BA/ice/">西置賜郡飯豊町（6件）</a></li><li><a href="%E9%85%92%E7%94%B0%E5%B8%82/ice/">酒田市（11件）</a></li><li><a href="%E9%95%B7%E4%BA%95%E5%B8%82/ice/">長井市（6件）</a></li><li><a href="%E9%A3%BD%E6%B5%B7%E9%83%A1%E9%81%8A%E4%BD%90%E7%94%BA/ice/">飽海郡遊佐町（5件）</a></li><li><a href="%E9%B6%B4%E5%B2%A1%E5%B8%82/ice/">鶴岡市（13件）</a></li></ul><div class="cta"><img src="../assets/app_icon.png" alt=""><div><div class="t">着く頃に開いているかまで確かめるなら、ヨッテコで。</div><div class="d">営業時間と現在地から、到着時刻の営業状況を目安表示します。全国26,000件の温泉・道の駅・アイスのお店を、登録不要・無料で。</div><div class="btnrow"><a class="btn" href="https://apps.apple.com/app/apple-store/id6790649055?pt=129161911&amp;ct=web-spots&amp;mt=8">App Storeで無料ダウンロード</a><a class="xbtn" href="https://x.com/yottecojp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg> @yottecojp をフォロー</a></div></div></div>
+<footer>掲載情報は2026年9月時点の収録データです。営業時間・料金は変更される場合があります。お出かけ前に施設へご確認ください。<br>
 © ヨッテコ - 温泉・道の駅・ソフトクリーム寄り道スポット検索
 <a class="xfoot" href="https://x.com/yottecojp"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.451-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"/></svg> @yottecojp</a></footer>
-</div><!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "46db72568f924c3ea9c21818cd28b53f"}'></script><!-- End Cloudflare Web Analytics --></body></html>
+</div>
+<!-- Cloudflare Web Analytics --><script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "46db72568f924c3ea9c21818cd28b53f"}'></script><!-- End Cloudflare Web Analytics -->
+</body></html>
